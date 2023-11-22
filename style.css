@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62, 5%;
+}
+
+
+body {
+    background-color: #1F2732;
+
+    margin: 0 auto;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    min-width: 100%;
+
+
+}
+
+.home {
+    margin-top: 3rem;
+    background-image: url(assets/banner.png);
+    background-repeat: initial;
+    background-position: center center;
+    width: 100%;
+}
+
+
+
+header img {
+
+    margin-right: 18rem;
+
+}
+
+header {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+header h1 {
+
+    margin-right: 5rem;
+
+    justify-content: center;
+    text-align: center;
+    font-size: 3.5rem;
+    color: white;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.menu {
+    margin-right: 10rem;
+}
+
+.menuBar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.menuBar ul {
+
+    list-style: none;
+    padding: 0;
+
+}
+
+.menuBar li {
+    display: inline;
+    margin: 0 10px;
+
+
+}
+
+.menuBar li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.7rem;
+}
+
+
+.linha {
+    margin: auto;
+
+    border: .1px solid #4E555F;
+    width: 80rem;
+}
+
+
+
+.button-header {
+    display: flex;
+    margin-left: 3rem;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+
+
+}
+
+
+.contact-button {
+    margin-right: 3rem;
+}
+
+.contact-button img {
+    display: flex;
+    max-width: 13rem;
+}
+
+.email-button img {
+    display: flex;
+    width: 19rem;
+}
+
+
+.banner {
+    display: flex;
+    flex-direction: row;
+    margin: 10px auto;
+    height: 40rem;
+    width: 80rem;
+    align-items: center;
+    text-align: center;
+
+}
+
+
+
+.banner .banner-texto h1 {
+    width: 35rem;
+
+    font-size: 55px;
+    color: #ffffff;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: bold;
+    text-align: justify;
+
+
+}
+
+.banner h5 {
+    margin: 1rem 0 0 -4rem;
+    color: #ccaa60;
+    font-size: 22px;
+    font-weight: 400;
+    font-family: 'Outfit', sans-serif;
+
+}
+
+.banner img {
+    display: flex;
+    margin-left: -em;
+    align-items: flex-start;
+}
+
+
+.alexandre img {
+    display: flex;
+    width: 50rem;
+    height: 40rem;
+    align-items: end;
+    margin-top: 1.2rem;
+
+}
+
+#button-whatsapp {
+    display: flex;
+    margin-top: 3rem;
+    width: 18rem;
+    height: 4rem;
+    background-color: #D1B06B;
+
+
+
+}
+
+#button-whatsapp a {
+    text-align: center;
+    text-decoration: none;
+    margin: auto;
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    color: black;
+}
+
+#sobre {
+
+    display: flex;
+ 
+    margin:auto;
+    width: 100%;
+    min-height: 100vh;
+
+    padding-top: 8rem;  
+
+}
+
+.sobre-escritorio {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 80rem;
+    ;
+}
+
+.sobre-escritorio h1 {
+    font-family: 'Cormorant Garamond', serif;
+    color: #ffffff;
+    padding-top: -2rem;
+    font-size: 50px;
+}
+
+
+.imagens-sobre img {
+    display: flex;
+    width: 30rem;
+    margin: 1rem;
+    align-items: flex-start;
+}
+
+
+.texto-sobre{
+    display: flex;
+    flex-direction: column;
+    margin: -40rem auto;
+    justify-content: center;
+  margin-right: 0.1rem;
+    
+  
+
+}
+
+.texto-sobre img{ 
+    display: flex;
+    flex-direction: column;
+ align-items: flex-start;
+width: 6rem;
+margin-bottom: 2rem;}
+
+.texto-sobre h5{
+    width: 30rem;
+    margin: 0 auto;
+    font-family: 'Cormorant Garamond', serif;
+    color: #ffffff;
+    font-size: 25px;
+
+}
+
+.texto-sobre h1{
+    width: 30rem;
+    text-align: justify;
+    font-family: 'Cormorant Garamond', serif;
+    color: #ffffff;
+    font-size: 50px;
+
+}
+
+.alexandre-circulo{
+    display: flex;
+    flex-direction: row;
+    margin-top: 45rem;
+    margin-left: 50rem;
+
+}
+ .alexandre-circulo img{
+  display: flex;
+  flex-direction: column;
+  width: 5rem;
+ padding-top: -2rem;
+  margin-left: -2rem;
+
+
+
+ }
+.anos-exp img{
+    width: 15rem;
+    margin-left: 70rem;
+    margin-top: -5rem;
+ 
+ }
+
+
+ .alexandre-circulo h2{
+    display: flex;
+padding-top: 1rem;
+ margin-left: 1rem;
+ text-align: justify;
+ color: white;
+ font-family: 'Luxurious Script', cursive;
+ font-size: 40px;
+
+ }
+
+ 
