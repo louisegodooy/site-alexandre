@@ -10,7 +10,7 @@
 
 
 body {
-    background-color: #1F2732;
+    background-color: #1B3148;
 
     margin: 0 auto;
 }
@@ -34,11 +34,24 @@ body {
 
 
 
-header img {
+header img:nth-child(1){
 
-    margin-right: 18rem;
+   margin: auto;
+   justify-items: center;
+   align-items: center;
+  height: 10rem;
+  
 
 }
+
+
+
+header img:nth-child(2){
+
+    margin: auto;
+    justify-items: center;
+    align-items: center;
+   height: 8rem;}
 
 header {
 
@@ -46,7 +59,8 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-top: 4rem;
+    margin-top: 1rem;
+    margin-bottom: -3rem;
 }
 
 header h1 {
@@ -119,7 +133,7 @@ header h1 {
 
 .contact-button img {
     display: flex;
-    max-width: 13rem;
+    max-width: 10rem;
 }
 
 .email-button img {
@@ -301,9 +315,152 @@ padding-top: 1rem;
  margin-left: 1rem;
  text-align: justify;
  color: white;
- font-family: 'Luxurious Script', cursive;
- font-size: 40px;
+ font-family: 'Cormorant Garamond', serif;
+ font-size: 30px;
 
  }
 
- 
+
+ #areas{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    min-width: 100%;
+   
+    background:rgb(30, 42, 58) ;
+   
+   
+    
+ }
+.caixa {
+    display: flex;
+    flex-direction: column;
+    width: 440px;
+    height:300px;
+    padding: 58px, 49px, 58px, 50px;
+  margin-bottom: 40px;
+  margin-left: 60px;
+  margin-top: 10px;
+background-color:#1B3148; 
+align-items: center;
+
+}
+
+.caixa h1{
+    color: white;
+   
+    font-family: 'Outfit', sans-serif;
+    font-weight: regular;
+}
+
+
+.caixa h5{
+    color: white;
+    margin-top: 10px;
+    padding: 20px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: regular;
+    font-size: 15px;
+    text-align: justify;
+
+}
+
+
+.contents {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.titulo-atuacao{
+    display: flex;
+    margin-left: 200px;
+ padding-top: 80px;
+    margin: auto;
+    margin-bottom: 70px;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    
+
+}
+
+
+
+.titulo-atuacao1 img{ 
+    width: 70px;
+    height: 50px;
+    margin-left: 40px;
+}
+
+.titulo-atuacao1{ 
+    margin-right: 200px;
+}
+
+.titulo-atuacao1 h1{
+    font-family: 'Cormorant Garamond', serif;
+font-size: 45px;
+font-weight: 700;
+line-height: 52px;
+margin: auto;
+margin-left: 40px;
+
+
+color: white;
+
+
+
+}
+
+.titulo-atuacao2 h2{
+     margin-left: 180px;
+     font-family: 'Outfit', sans-serif;
+font-size: 15px;
+font-weight: 600;
+line-height: 28px;
+letter-spacing: 0em;
+text-align: left;
+color: white;
+text-align: justify;
+width: 38rem;
+    
+}
+
+.titulo-atuacao2 h2 span{
+    color: #D1B06B;
+}
+
+.divisor-atuacao{
+    margin-top: 30px;
+    margin-left: 80px;
+}
+
+
+.titulo-caixa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.titulo-caixa img{
+    display: flex;
+    margin-left: 10px;
+    
+    height: 30px;
+    width: 30px;
+ margin-top: 20px;
+
+}
+
+
+
+.linha1 {
+    margin-top: 10px;
+
+    border: .1px solid #4E555F;
+    width: 20rem;
+}
