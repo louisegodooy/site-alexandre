@@ -39,7 +39,7 @@ header img:nth-child(1){
    margin: auto;
    justify-items: center;
    align-items: center;
-  height: 10rem;
+  height: 8rem;
   
 
 }
@@ -47,11 +47,12 @@ header img:nth-child(1){
 
 
 header img:nth-child(2){
-
+display: flex;
     margin: auto;
     justify-items: center;
     align-items: center;
-   height: 8rem;}
+   height: 5rem;
+margin-top: 2rem;}
 
 header {
 
@@ -61,7 +62,22 @@ header {
     justify-content: center;
     margin-top: 1rem;
     margin-bottom: -3rem;
+    width: 120rem;
+    margin: auto;
+    margin-bottom: -2rem;
+
+   
 }
+
+.logo-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
 
 header h1 {
 
@@ -106,6 +122,9 @@ header h1 {
     font-size: 1.7rem;
 }
 
+.menuBar li a:hover{
+    color: #ccaa60;
+}
 
 .linha {
     margin: auto;
@@ -198,6 +217,8 @@ header h1 {
     width: 18rem;
     height: 4rem;
     background-color: #D1B06B;
+    border-radius: 5px;
+    cursor: pointer;
 
 
 
@@ -210,6 +231,12 @@ header h1 {
     font-family: 'Outfit', sans-serif;
     font-size: 18px;
     color: black;
+
+}
+
+#button-whatsapp:hover{
+    background-color:#e0c791;
+    color: white;
 }
 
 #sobre {
@@ -221,6 +248,7 @@ header h1 {
     min-height: 100vh;
 
     padding-top: 8rem;  
+    background:  #243042;
 
 }
 
@@ -229,7 +257,7 @@ header h1 {
     flex-direction: column;
     margin: 0 auto;
     width: 80rem;
-    ;
+   
 }
 
 .sobre-escritorio h1 {
@@ -308,7 +336,6 @@ margin-bottom: 2rem;}
  
  }
 
-
  .alexandre-circulo h2{
     display: flex;
 padding-top: 1rem;
@@ -320,6 +347,39 @@ padding-top: 1rem;
 
  }
 
+ #consultaProcessual{
+    height: 12rem;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, rgba(209, 176, 107, 1) 2%, rgba(30, 42, 58, 1)70%);
+ }
+ #consultaProcessual h1{
+    color: white;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+   margin-bottom: 1.2rem;
+ 
+
+   
+ }
+
+ .botaoConsulta{
+   
+    width: 12rem;
+    height: 3rem;
+   margin-right: 1rem;
+   border-radius: 5px;
+   color: white;
+   background: #1F2732;
+cursor: pointer;
+ }
+
+ .botaoConsulta:hover{
+    background: #D1B06B;
+ }
 
  #areas{
     display: flex;
@@ -341,9 +401,13 @@ padding-top: 1rem;
   margin-bottom: 40px;
   margin-left: 60px;
   margin-top: 10px;
-background-color:#1B3148; 
+  border-radius: 10px;
+background-color:#2E3947; 
 align-items: center;
+}
 
+.caixa:hover  {
+    transform: scale(1.1);
 }
 
 .caixa h1{
