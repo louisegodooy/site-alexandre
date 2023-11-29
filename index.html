@@ -7,7 +7,7 @@
         rel="stylesheet">
 </head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=0.8">
+<meta name="viewport" content="width=device-width, initial-scale=0.8, maximum-scale=1.0, minimum-scale= 0.7">
 <title>Advocacia Criminal</title>
 <link rel="stylesheet" href="style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,6 +21,7 @@
         <section id="home">
             <header>
 
+                <!-- Logo do nome alexandre souza -->
                 <div class="logo-header">
                     <img src="assets/alex-logo.png" alt="">
                     <img src="assets/alex-logo2.png" alt="">
@@ -28,7 +29,7 @@
                 </div>
 
             </header>
-            <div class="home">
+            <div class="home-header">
 
 
 
@@ -113,7 +114,8 @@
 
     <section id="areas">
 
-
+<div class="areas-atuacao">
+    
         <div class="titulo-atuacao">
 
             <div class="titulo-atuacao1">
@@ -231,25 +233,31 @@
         </div>
 
 
-
+    </div>
 
     </section>
 
 
 
 
-
     <section id="sobre">
-        <div class="sobre-escritorio">
 
 
-            <div class="imagens-sobre">
-                <img src="assets/sobre-escritorio01.png" alt="">
-                <img src="assets/sobre-escritorio02.png" alt="">
+        <div class="pagesobre"> 
+            <div class="sobre-parte1"> 
+
+            <div class="slides">
+              <img src="assets/sobre-escritorio01.png" alt="Imagem 1">
+              <img src="assets/sobre-escritorio02.png" alt="Imagem 2">
+              <img src="assets/sobre-escritorio01.png" alt="Imagem 3">
+            
             </div>
+        </div>
+          <script src="script.js"></script>
 
 
-            <div class="texto-sobre">
+          <div class="sobre-parte2"> 
+         
                 <h1>Nosso Escritório </h1>
                 <img src="assets/separator.svg" alt="">
                 <h5>Somos um respeitado e renomado escritório de advocacia especializado na área penal e criminal, e
@@ -257,22 +265,80 @@
                     nossos clientes. Com mais de 15 anos de experiência sólida e um histórico comprovado de sucesso,
                     somos a escolha confiável para aqueles que buscam assistência legal especializada em questões
                     criminais.
-
-            </div>
             </h5>
 
+<div class="rodape-sobre"> 
 
-            <div class="alexandre-circulo">
+            <div id="alexandre-circulo">
                 <img src="assets/alexandre-circulo.svg" alt="">
-                <h2>Alexandre Souza</h2>
-
+                <h3>Alexandre Souza</h3>
+              
             </div>
-            <div class="anos-exp">
+
+            <div id="anos-exp">
                 <img src="assets/years-ex.svg" alt="">
             </div>
         </div>
-    </section>
+        </div>
+   
     </div>
+    </section>
+
+    <section id="contato">
+
+<div class="formulario">  <form action="processar_form.php" method="post">
+    <div class="form-group">
+        <h1>CONTATO</h1>
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required>
+      
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+
+    <div class="form-group">
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem" required></textarea>
+    </div>
+
+    <button type="submit">Enviar</button>
+  </form></div>
+   
+    </section>
+    <footer>
+        <div class="logo">
+          <img src="assets/logoalex-transparent.png" alt="Logo">
+        </div>
+        <div class="links">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#areas">Área de atuação</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+        <div class="address">
+            <p>Endereço: Rua Professor Arthéphio Bezerra, 1533 - Lagoa Nova País</p>
+          </div>
+        
+        </div>
+       
+        <div class="copyright">
+            <p>&copy; 2023 AlexandreSouza. Todos os direitos reservados.
+              <a href="https://www.instagram.com/oalexandresouza" target="_blank">
+                <img src="assets/instagram.svg" alt="Instagram">
+              </a>
+            </p>
+          </div>
+      </footer>
+    
+</body>
+</html>
+
+
 
 </div>
 </div>

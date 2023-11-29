@@ -1,62 +1,52 @@
+/* Define estilos de reset para garantir consistência entre os navegadores */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
+/* Define o tamanho de fonte base para rem, utilizando 62.5% da escala (10px) */
 :root {
     font-size: 62, 5%;
 }
 
+/* define a classe .page como um contêiner flexível com direção de coluna */
 .page{
 display: flex;
 flex-direction: column;
-    width: 100%;
+    min-width: 70vh;
+   min-height: 100vh;
 }
+
+
 body {
     background-color: #1B3148;
     margin: 0 auto;
 }
 
+
+/*página home*/
 #home {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    min-width: 100%;
-
+   width:100vw;
 
 }
 
-.home {
-    margin-top: 3rem;
-    background-image: url(assets/banner.png);
-    background-repeat: initial;
-    background-position: center center;
-    width: 100%;
-}
-
-
-
+/*Imagem logo AS do cabeçalho*/
 header img:nth-child(1){
 
-   margin: auto;
-   justify-items: center;
-   align-items: center;
-  height: 8rem;
-  
-
-}
-
-
-
-header img:nth-child(2){
-display: flex;
     margin: auto;
     justify-items: center;
     align-items: center;
-   height: 5rem;
-margin-top: 2rem;}
-
+   height: 8rem;
+   
+ 
+ }
+ 
+ /*cabeçalho da página - logo de alexandre dentro dele*/
 header {
 
     display: flex;
@@ -71,17 +61,117 @@ header {
 
    
 }
+ /*imagem logo nome Alexandre Souza Advocacia no cabeçalho*/
+ header img:nth-child(2){
+ display: flex;
+     margin: auto;
+     justify-items: center;
+     align-items: center;
+    height: 5rem;
+ margin-top: 2rem;}
 
+ /*acoplado as duas imagens do logo Alexandre - AS e nome por extenso*/
 .logo-header{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    grid-area: auto;
+    margin: auto;
+   
+}
+
+/*cabeçalho do home - (menu bar, linhas */
+.home-header {
+    margin-top: 3rem;
+    background-image: url(assets/banner.png);
+    background-repeat: initial;
+    background-position: center center;
+    width: 100%;
+}
+
+/*Menu : Home | area de atuacao | sobre | contato */
+.menu {
+    margin-right: 10rem;
+}
+
+/*acoplado do MENU e dos botoes: contato e email */
+.menuBar {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
+}
+
+/*estilização da lista do menu bar*/
+.menuBar ul {
+
+    list-style: none;
+    padding: 0;
+
+}
+/*estilização de cada item da lista do menu bar*/
+.menuBar li {
+    display: inline;
+    margin: 0 10px;
+
+
+}
+/*ancora para entrar nas sections*/
+.menuBar li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.7rem;
+}
+/*ação ao passar o mouse por cima do MenuBar*/
+.menuBar li a:hover{
+    color: #ccaa60;
+}
+
+
+/*linha divisória em cima e embaixo no menuBar*/
+.linha {
+    margin: auto;
+
+    border: .1px solid #4E555F;
+    width: 80rem;
+}
+
+/*botoes para contato e email*/
+.button-header {
+    display: flex;
+    margin-left: 3rem;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+
+
+}
+
+/*botao de contato*/
+.contact-button {
+    margin-right: 3rem;
+}
+/*imagem botão de contato*/
+.contact-button img {
+    display: flex;
+    max-width: 10rem;
+}
+/*imagem botao de email*/
+.email-button img {
+    display: flex;
+    width: 19rem;
 }
 
 
 
 
 
+
+
+
+
+/*titulo principal da pagina home*/
 header h1 {
 
     margin-right: 5rem;
@@ -93,76 +183,8 @@ header h1 {
     font-family: 'Cormorant Garamond', serif;
 }
 
-.menu {
-    margin-right: 10rem;
-}
 
-.menuBar {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-}
-
-.menuBar ul {
-
-    list-style: none;
-    padding: 0;
-
-}
-
-.menuBar li {
-    display: inline;
-    margin: 0 10px;
-
-
-}
-
-.menuBar li a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.7rem;
-}
-
-.menuBar li a:hover{
-    color: #ccaa60;
-}
-
-.linha {
-    margin: auto;
-
-    border: .1px solid #4E555F;
-    width: 80rem;
-}
-
-
-
-.button-header {
-    display: flex;
-    margin-left: 3rem;
-    justify-content: center;
-    align-items: center;
-    height: 5rem;
-
-
-}
-
-
-.contact-button {
-    margin-right: 3rem;
-}
-
-.contact-button img {
-    display: flex;
-    max-width: 10rem;
-}
-
-.email-button img {
-    display: flex;
-    width: 19rem;
-}
-
+/*container com titulos e subtitulos principais do home e botão wpp*/
 
 .banner {
     display: flex;
@@ -175,8 +197,7 @@ header h1 {
 
 }
 
-
-
+/*titulo principal do banner*/
 .banner .banner-texto h1 {
     width: 35rem;
 
@@ -189,6 +210,8 @@ header h1 {
 
 }
 
+/*Subtitulo banner */
+
 .banner h5 {
     margin: 1rem 0 0 -4rem;
     color: #ccaa60;
@@ -198,22 +221,22 @@ header h1 {
 
 }
 
+/*foto de alexandre no home*/
 .banner img {
     display: flex;
-    margin-left: -em;
     align-items: flex-start;
 }
 
-
+/*container da foto de alexandre no home*/
 .alexandre img {
     display: flex;
     width: 50rem;
     height: 40rem;
     align-items: end;
     margin-top: 1.2rem;
-
 }
 
+/*botao do whatsapp*/
 #button-whatsapp {
     display: flex;
     margin-top: 3rem;
@@ -222,9 +245,6 @@ header h1 {
     background-color: #D1B06B;
     border-radius: 5px;
     cursor: pointer;
-
-
-
 }
 
 #button-whatsapp a {
@@ -242,114 +262,8 @@ header h1 {
     color: white;
 }
 
-#sobre {
 
-    display: flex;
- 
-    margin:auto;
-    width: 100%;
-    min-height: 100%;
-
-    padding-top: 8rem;  
-    background:  #243042;
-
-}
-
-.sobre-escritorio {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    width: 80rem;
-   
-}
-
-.sobre-escritorio h1 {
-    font-family: 'Cormorant Garamond', serif;
-    color: #ffffff;
-    padding-top: -2rem;
-    font-size: 50px;
-}
-
-
-.imagens-sobre img {
-    display: flex;
-    width: 30rem;
-    margin: 1rem;
-    align-items: flex-start;
-}
-
-
-.texto-sobre{
-    display: flex;
-    flex-direction: column;
-    margin: -40rem auto;
-    justify-content: center;
-  margin-right: 0.1rem;
-    
-  
-
-}
-
-.texto-sobre img{ 
-    display: flex;
-    flex-direction: column;
- align-items: flex-start;
-width: 6rem;
-margin-bottom: 2rem;}
-
-.texto-sobre h5{
-    width: 30rem;
-    margin: 0 auto;
-    font-family: 'Cormorant Garamond', serif;
-    color: #ffffff;
-    font-size: 25px;
-
-}
-
-.texto-sobre h1{
-    width: 30rem;
-    text-align: justify;
-    font-family: 'Cormorant Garamond', serif;
-    color: #ffffff;
-    font-size: 50px;
-
-}
-
-.alexandre-circulo{
-    display: flex;
-    flex-direction: row;
-    margin-top: 45rem;
-    margin-left: 50rem;
-
-}
- .alexandre-circulo img{
-  display: flex;
-  flex-direction: column;
-  width: 5rem;
- padding-top: -2rem;
-  margin-left: -2rem;
-
-
-
- }
-.anos-exp img{
-    width: 15rem;
-    margin-left: 70rem;
-    margin-top: -5rem;
- 
- }
-
- .alexandre-circulo h2{
-    display: flex;
-padding-top: 1rem;
- margin-left: 1rem;
- text-align: justify;
- color: white;
- font-family: 'Cormorant Garamond', serif;
- font-size: 30px;
-
- }
-
+/*botão para site de consulta processual*/
  #consultaProcessual{
     height: 12rem;
     display: flex;
@@ -370,6 +284,7 @@ padding-top: 1rem;
    
  }
 
+ /*botoes para consulta e-SAJ e Consulta Publica*/
  .botaoConsulta{
    
     width: 12rem;
@@ -390,20 +305,24 @@ cursor: pointer;
     flex-direction: column;
     margin: 0 auto;
     min-width: 100%;
-   
+   height: 60rem;
     background:rgb(30, 42, 58) ;
    
    
     
  }
+
+    
+ 
 .caixa {
     display: flex;
     flex-direction: column;
-    width: 440px;
+  
+    width: 380px;
     height:300px;
     padding: 58px, 49px, 58px, 50px;
   margin-bottom: 40px;
-  margin-left: 60px;
+ 
   margin-top: 10px;
   border-radius: 10px;
 background-color:#2E3947; 
@@ -428,7 +347,7 @@ align-items: center;
     padding: 20px;
     font-family: 'Outfit', sans-serif;
     font-weight: regular;
-    font-size: 15px;
+    font-size: 14px;
     text-align: justify;
 
 }
@@ -436,7 +355,9 @@ align-items: center;
 
 .contents {
     margin: auto;
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto auto; /* Duas colunas com tamanhos iguais */
+    gap: 2rem;
     align-items: center;
     justify-content: center;
 }
@@ -444,13 +365,14 @@ align-items: center;
 
 .titulo-atuacao{
     display: flex;
-    margin-left: 200px;
- padding-top: 80px;
+   padding-top: 80px;
     margin: auto;
     margin-bottom: 70px;
     align-items: center;
     justify-content: center;
     text-align: justify;
+    width: 10rem;
+    gap: -30px;
     
 
 }
@@ -473,7 +395,8 @@ font-size: 45px;
 font-weight: 700;
 line-height: 52px;
 margin: auto;
-margin-left: 40px;
+
+width: 400px;
 
 
 color: white;
@@ -483,8 +406,8 @@ color: white;
 }
 
 .titulo-atuacao2 h2{
-     margin-left: 180px;
-     font-family: 'Outfit', sans-serif;
+margin-left: 180px;
+font-family: 'Outfit', sans-serif;
 font-size: 15px;
 font-weight: 600;
 line-height: 28px;
@@ -501,8 +424,10 @@ width: 38rem;
 }
 
 .divisor-atuacao{
-    margin-top: 30px;
-    margin-left: 80px;
+    display: flex;
+  margin-left: -11rem;
+  margin-right: rem;
+    align-items: center;
 }
 
 
@@ -528,7 +453,262 @@ width: 38rem;
 
 .linha1 {
     margin-top: 10px;
-
     border: .1px solid #4E555F;
     width: 20rem;
 }
+
+
+
+#sobre{
+    display: flex;
+    width: 100%;
+    height: 50rem;
+    background: linear-gradient(to top, rgb(30, 42, 58)20%, rgb(36, 66, 98)80% );
+}
+
+/*imagens do carossel - página #sobre*/
+.slides img {
+    display: none;
+    border-radius: 1rem; 
+    width: 30rem;
+    height: 20rem;
+}
+/*carrossel imagem página #sobre*/
+.slides{
+    display: flex;
+    margin:auto;
+margin-left: 5rem;
+    align-items: center;
+    width: 30rem;
+
+}
+
+/*container da pagina #sobre*/
+.pagesobre {
+    display: flex;
+  margin: auto;
+  width: 80rem;
+  }
+  
+/*primeira parte da página sobre : imagens do carrossel */
+  .sobre-parte1{
+    display: flex;
+    justify-content: center;
+  }
+  
+  /*parte dois da pagina #sobre, titulo, subtitulo, rodapé */
+  .sobre-parte2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10rem;
+   
+  }
+
+  /*titulo da página sobre "nosso escritorio" */
+.sobre-parte2 h1 {
+    font-family: 'Cormorant Garamond', serif;
+    color: #ffffff;
+    padding-top: -2rem;
+    margin-top: 5rem;
+    font-size: 40px;
+}
+
+/*texto página #sobre*/
+
+.sobre-parte2 h5{
+    width: 30rem;
+    margin: 1rem auto;
+    font-family: 'Cormorant Garamond', serif;
+    color: #ffffff;
+    font-size: 25px;
+    margin-bottom: 5rem;
+    text-align: justify;
+
+}
+/*container - imagem do rodapé*/
+.sobre-parte2 img{
+    width: 5.5rem;
+}
+
+/*container da imagem de alexandre #sobre*/
+#alexandre-circulo {
+    display: flex;
+    margin: auto;
+}
+
+#alexandre-circulo h3{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Cormorant Garamond', serif;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 700;
+    width: 10rem;
+
+}
+
+/*alexandre foto em circulo na página #sobre*/
+#alexandre-circulo img{
+display: flex;
+ width: 4rem;
+ justify-content: center;
+ align-items: center;
+
+  }
+
+  /*anos de experiencia img - pagina #sobre*/
+  #anos-exp img{
+display: flex;
+ width: 13rem;
+ justify-content: center;
+ align-items: center
+
+  }
+  /*rodapé da página #sobre*/
+    .rodape-sobre{
+        display: flex;
+        flex-direction: row;
+        width: 22rem;
+        gap: 3rem;
+       
+       
+    }
+
+
+    #contato {
+        display: flex;
+        justify-content: center; /* Centraliza horizontalmente */
+        align-items: center; /* Centraliza verticalmente */
+        background-image: url('assets/escritorio.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover; /* Ajusta o tamanho da imagem para cobrir toda a área */
+        height: 100vh;
+      }
+    
+  
+
+
+ /* Formulário */
+.formulario {
+    background-color: rgba(31, 39, 50, 0.8); /* rgba para dar um efeito de transparência */
+    width: 100%;
+    padding: 20px; /* Adiciona um espaço interno ao formulário */
+    max-width: 500px; /* Largura máxima do formulário */
+    color: white;
+    margin-top: 0rem;
+    margin-left: 40rem;
+  }
+  
+  .formulario h1 {
+    text-align: center; 
+    font-size: 2.2rem;
+  }
+  
+  .formulario .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .formulario .form-group label {
+    display: block;
+  }
+  
+  .formulario input[type="text"],
+  .formulario input[type="email"],
+  .formulario textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .formulario button {
+    width: 100%;
+    padding: 10px;
+    background-color: #CCAA60;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+
+
+  }
+  
+       
+  .formulario button:hover{
+    background: white;
+    color: black;
+  }
+  /* Responsividade */
+  @media screen and (max-width: 600px) {
+    .formulario{
+      width: 90%; /* Ajuste a largura para telas menores */
+    }
+  }
+
+  footer {
+    background: linear-gradient(to top, rgb(30, 42, 58)20%, rgb(36, 66, 98)80% );
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .logo img {
+    width: 20rem; /* Ajuste o tamanho conforme necessário */
+    margin-bottom: -8rem;
+    margin-top: -5rem ;
+  }
+  
+  .links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .links li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  .links a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  .social img {
+    width: 10px; /* Ajuste o tamanho conforme necessário */
+    margin-top: 10px;
+    color: white;
+    display: flex;
+    align-items: end;
+  }
+  
+  .social img:hover {
+    opacity: 0.7;
+  }
+  
+  /* Estilos para o texto de copyright */
+  .copyright {
+    margin-top: 20px;
+  }
+  
+  .copyright p {
+    font-size: 14px;
+    color: #666;
+    display: inline; /* Faz com que o texto e a imagem fiquem na mesma linha */
+  }
+  
+  .copyright img {
+    width: 20px; /* Ajuste o tamanho conforme necessário */
+    vertical-align: middle; /* Alinha verticalmente com o texto */
+    margin-left: 5px; /* Adiciona um pequeno espaço entre o texto e a imagem */
+  }
+
+  .address p{
+    margin-top: 2rem;
+    color: white;
+
+  }
