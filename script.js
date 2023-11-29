@@ -19,5 +19,5 @@ function carousel() {
 
   // Mostra a imagem atual e define um intervalo para trocar as imagens
   slides[slideIndex - 1].style.display = "block";
-  setTimeout(carousel, 2000); // Muda a imagem a cada 2 segundos (2000 milissegundos)
+  setTimeout(carousel, 3000); // Muda a imagem a cada 2 segundos (2000 milissegundos)
 }

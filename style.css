@@ -230,10 +230,11 @@ header h1 {
 /*container da foto de alexandre no home*/
 .alexandre img {
     display: flex;
-    width: 50rem;
+    width: auto;
     height: 40rem;
     align-items: end;
     margin-top: 1.2rem;
+    margin-left: 10rem;
 }
 
 /*botao do whatsapp*/
@@ -470,8 +471,9 @@ width: 38rem;
 .slides img {
     display: none;
     border-radius: 1rem; 
-    width: 30rem;
+    width: auto;
     height: 20rem;
+
 }
 /*carrossel imagem página #sobre*/
 .slides{
