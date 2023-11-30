@@ -1,4 +1,3 @@
-/* Define estilos de reset para garantir consistência entre os navegadores */
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +9,12 @@
 :root {
     font-size: 62, 5%;
 }
+
+
+
+
+
+/*GERAL - PRIMEIRA PÁGINA*/
 
 /* define a classe .page como um contêiner flexível com direção de coluna */
 .page{
@@ -26,28 +31,21 @@ body {
 }
 
 
-/*página home*/
-#home {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-   width:100vw;
+    /*página home*/
+    #home {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+       max-width:100%;
+       height: 100%;
+    
+    }
+    
 
-}
-
-/*Imagem logo AS do cabeçalho*/
-header img:nth-child(1){
-
-    margin: auto;
-    justify-items: center;
-    align-items: center;
-   height: 8rem;
-   
  
- }
- 
+
  /*cabeçalho da página - logo de alexandre dentro dele*/
-header {
+ header {
 
     display: flex;
     flex-direction: row;
@@ -57,29 +55,42 @@ header {
     margin-bottom: -3rem;
     width: 120rem;
     margin: auto;
-    margin-bottom: -2rem;
-
+    margin-top:1rem;
    
 }
+ /*acoplado as duas imagens do logo Alexandre - AS e nome por extenso*/
+        
+ .logo-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    margin-right: 90rem;
+}
+
+
+    /*Imagem logo AS do cabeçalho*/
+header img:nth-child(1){
+
+    margin: auto;
+    justify-items: center;
+    align-items: center;
+   height: 8rem;
+   
+ 
+ }
+    
  /*imagem logo nome Alexandre Souza Advocacia no cabeçalho*/
  header img:nth-child(2){
- display: flex;
-     margin: auto;
-     justify-items: center;
-     align-items: center;
-    height: 5rem;
- margin-top: 2rem;}
-
- /*acoplado as duas imagens do logo Alexandre - AS e nome por extenso*/
-.logo-header{
-    display: grid;
-    grid-template-columns: auto auto;
-    justify-content: center;
-    grid-area: auto;
-    margin: auto;
+    display: flex;
+        margin: auto;
+        justify-items: center;
+        align-items: center;
+       height: 5rem;
+    margin-top: 2rem;}
    
-}
-
+   
+ 
 /*cabeçalho do home - (menu bar, linhas */
 .home-header {
     margin-top: 3rem;
@@ -88,59 +99,49 @@ header {
     background-position: center center;
     width: 100%;
 }
-
-/*Menu : Home | area de atuacao | sobre | contato */
-.menu {
-    margin-right: 10rem;
-}
-
-/*acoplado do MENU e dos botoes: contato e email */
-.menuBar {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-}
-
-/*estilização da lista do menu bar*/
-.menuBar ul {
-
-    list-style: none;
-    padding: 0;
-
-}
-/*estilização de cada item da lista do menu bar*/
-.menuBar li {
-    display: inline;
-    margin: 0 10px;
-
-
-}
-/*ancora para entrar nas sections*/
-.menuBar li a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.7rem;
-}
-/*ação ao passar o mouse por cima do MenuBar*/
-.menuBar li a:hover{
-    color: #ccaa60;
-}
-
+ 
 
 /*linha divisória em cima e embaixo no menuBar*/
 .linha {
     margin: auto;
 
     border: .1px solid #4E555F;
-    width: 80rem;
+    width: 30rem;
 }
+
+.menuBar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.menuBar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+ 
+}
+
+.menuBar li {
+    margin: 0 10px;
+}
+
+.menuBar li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+
 
 /*botoes para contato e email*/
 .button-header {
     display: flex;
-    margin-left: 3rem;
+    gap: 12px;
     justify-content: center;
     align-items: center;
     height: 5rem;
@@ -150,43 +151,20 @@ header {
 
 /*botao de contato*/
 .contact-button {
-    margin-right: 3rem;
+    margin-right: 1rem;
 }
 /*imagem botão de contato*/
 .contact-button img {
     display: flex;
-    max-width: 10rem;
+    max-width: 9rem;
 }
 /*imagem botao de email*/
 .email-button img {
     display: flex;
-    width: 19rem;
+    width: 15rem;
 }
 
-
-
-
-
-
-
-
-
-/*titulo principal da pagina home*/
-header h1 {
-
-    margin-right: 5rem;
-
-    justify-content: center;
-    text-align: center;
-    font-size: 3.5rem;
-    color: white;
-    font-family: 'Cormorant Garamond', serif;
-}
-
-
-/*container com titulos e subtitulos principais do home e botão wpp*/
-
-.banner {
+ .banner {
     display: flex;
     flex-direction: row;
     margin: 10px auto;
@@ -197,63 +175,76 @@ header h1 {
 
 }
 
+
+
+.banner .banner-texto img{ 
+
+    display: flex;
+    width: 5rem;
+    margin-left: 2rem;
+}
+.banner .banner-texto{
+    display: flex;
+    flex-direction: column;
+    margin-top: -8rem;
+    margin-left: 3rem;
+    
+}
+
 /*titulo principal do banner*/
 .banner .banner-texto h1 {
-    width: 35rem;
 
-    font-size: 55px;
+    margin-left:-2rem;
+    width: 22rem;
+    align-items: center;
+    font-size: 35px;
     color: #ffffff;
     font-family: 'Cormorant Garamond', serif;
     font-weight: bold;
-    text-align: justify;
+    text-align: start;
+}
 
+.banner .banner-texto h5 {
+    margin-top: 5rem;
+    width: 15rem;
+    font-size: 20px;
+    color: #D1B06B;
+    font-family: 'Cormorant Garamond', serif;
+    text-align: start;
+    margin-left: -2rem;
+    margin-bottom: 1rem;
 
 }
 
-/*Subtitulo banner */
-
-.banner h5 {
-    margin: 1rem 0 0 -4rem;
-    color: #ccaa60;
-    font-size: 22px;
-    font-weight: 400;
-    font-family: 'Outfit', sans-serif;
-
-}
-
-/*foto de alexandre no home*/
-.banner img {
+#button-whatsapp{
     display: flex;
-    align-items: flex-start;
-}
-
-/*container da foto de alexandre no home*/
-.alexandre img {
-    display: flex;
-    width: auto;
-    height: 40rem;
-    align-items: end;
-    margin-top: 1.2rem;
-    margin-left: 10rem;
-}
-
-/*botao do whatsapp*/
-#button-whatsapp {
-    display: flex;
-    margin-top: 3rem;
-    width: 18rem;
-    height: 4rem;
+    margin-top: 2rem;
+    margin-left: -2rem;
+    height: 5rem;
+    width: 12rem;
     background-color: #D1B06B;
-    border-radius: 5px;
-    cursor: pointer;
+    border-radius: 10%;
+    cursor: pointer; 
+
+
 }
 
+#button-whatsapp IMG {
+    display: flex;
+    width: 2rem;
+    margin-top: 1.8rem;
+    
+    
+}
 #button-whatsapp a {
+    width: 8rem;
     text-align: center;
     text-decoration: none;
+    align-items: center;
     margin: auto;
+    margin-left: -.6rem;
     font-family: 'Outfit', sans-serif;
-    font-size: 18px;
+    font-size: 15px;
     color: black;
 
 }
@@ -264,8 +255,18 @@ header h1 {
 }
 
 
-/*botão para site de consulta processual*/
- #consultaProcessual{
+.alexandre{
+    display: flex;
+height: 66%;
+margin-left: -10rem;
+margin-top: 15rem;
+}
+
+
+
+/*SEGUNDA PÁGINA*/
+
+#consultaProcessual{
     height: 12rem;
     display: flex;
     flex-direction: column;
@@ -278,14 +279,12 @@ header h1 {
  #consultaProcessual h1{
     color: white;
     font-family: 'Cormorant Garamond', serif;
-    font-size: 18px;
+    font-size: 15px;
    margin-bottom: 1.2rem;
- 
+text-align: center;}
 
-   
- }
 
- /*botoes para consulta e-SAJ e Consulta Publica*/
+    /*botoes para consulta e-SAJ e Consulta Publica*/
  .botaoConsulta{
    
     width: 12rem;
@@ -301,25 +300,31 @@ cursor: pointer;
     background: #D1B06B;
  }
 
+
+ /*terceira página*/
+
  #areas{
     display: flex;
     flex-direction: column;
     margin: 0 auto;
     min-width: 100%;
-   height: 60rem;
+   height: 100%;
     background:rgb(30, 42, 58) ;
    
    
     
  }
 
-    
+    .areas-atuação {
+        display: flex;
+        flex-direction: column;
+    }
  
 .caixa {
     display: flex;
     flex-direction: column;
   
-    width: 380px;
+    width: 350px;
     height:300px;
     padding: 58px, 49px, 58px, 50px;
   margin-bottom: 40px;
@@ -366,13 +371,14 @@ align-items: center;
 
 .titulo-atuacao{
     display: flex;
+    flex-direction: column;
    padding-top: 80px;
     margin: auto;
     margin-bottom: 70px;
     align-items: center;
     justify-content: center;
     text-align: justify;
-    width: 10rem;
+    width: 8rem;
     gap: -30px;
     
 
@@ -381,23 +387,27 @@ align-items: center;
 
 
 .titulo-atuacao1 img{ 
+    display: flex;
     width: 70px;
     height: 50px;
-    margin-left: 40px;
+    margin-left:20rem;
 }
 
 .titulo-atuacao1{ 
-    margin-right: 200px;
+    
+    margin-right: 20rem;
 }
 
 .titulo-atuacao1 h1{
+    display: flex;
     font-family: 'Cormorant Garamond', serif;
-font-size: 45px;
+font-size: 35px;
 font-weight: 700;
 line-height: 52px;
 margin: auto;
+margin-left: 20rem;
 
-width: 400px;
+width:300px;
 
 
 color: white;
@@ -407,16 +417,16 @@ color: white;
 }
 
 .titulo-atuacao2 h2{
-margin-left: 180px;
+    margin-top: -3rem;
 font-family: 'Outfit', sans-serif;
-font-size: 15px;
+font-size: 13px;
 font-weight: 600;
 line-height: 28px;
 letter-spacing: 0em;
 text-align: left;
 color: white;
 text-align: justify;
-width: 38rem;
+width: 25rem;
     
 }
 
@@ -450,16 +460,1441 @@ width: 38rem;
 
 }
 
-
+.contents {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
 
 .linha1 {
     margin-top: 10px;
     border: .1px solid #4E555F;
-    width: 20rem;
+    width: 18rem;
+}
+
+/*QUARTA PÁGINA*/
+
+
+#sobre{
+    display: flex;
+    width: 100%;
+    height: 90vh;
+    background: linear-gradient(to top, rgb(30, 42, 58)20%, rgb(36, 66, 98)80% );
+}
+
+/*imagens do carossel - página #sobre*/
+.slides img {
+    display: none;
+    border-radius: 1rem; 
+    width: auto;
+    height: 20rem;
+
+}
+/*carrossel imagem página #sobre*/
+.slides{
+    display: flex;
+    margin:auto;
+margin-left: 5rem;
+    align-items: center;
+    width: 30rem;
+
+}
+/*container da pagina #sobre*/
+.pagesobre {
+    display: flex;
+    flex-direction: column;
+    height: 130vh;
+  margin: auto;
+  margin-top: 2rem;
+ align-items: center;
+margin-left: -6rem;
+  width: 80rem;
+  }
+
+ 
+  
+/*primeira parte da página sobre : imagens do carrossel */
+  .sobre-parte1{
+    display: flex;
+    
+  }
+  
+  /*parte dois da pagina #sobre, titulo, subtitulo, rodapé */
+  .sobre-parte2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -1rem;
+    margin-left: 10rem;
+    
+ 
+   
+  }
+
+  /*titulo da página sobre "nosso escritorio" */
+.sobre-parte2 h1 {
+    display: flex;
+    font-family: 'Cormorant Garamond', serif;
+    color: #ffffff;
+    padding-top: -2rem;
+    margin-top: 5rem;
+    font-size: 40px;
+    margin-left: -4rem;
+    text-align: center;
+}
+
+/*texto página #sobre*/
+
+.sobre-parte2 h5{
+    display: flex;
+    width: 25rem;
+    margin: 1rem auto;
+    font-family: 'Cormorant Garamond', serif;
+    color: #ffffff;
+    font-size: 20px;
+    margin-bottom: 5rem;
+    text-align: justify;
+    margin-left: 2rem;
+    
+
+}
+/*container - imagem do rodapé*/
+.sobre-parte2 img{
+    display: flex;
+    width: 5.5rem;
+    margin-left: -15rem;
+}
+
+/*container da imagem de alexandre #sobre*/
+#alexandre-circulo {
+    display: flex;
+    margin: auto;
+}
+
+#alexandre-circulo h3{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Cormorant Garamond', serif;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    width: 10rem;
+
+}
+
+/*alexandre foto em circulo na página #sobre*/
+#alexandre-circulo img{
+display: flex;
+ width: 3rem;
+ justify-content: center;
+ align-items: center;
+
+  }
+
+  /*anos de experiencia img - pagina #sobre*/
+  #anos-exp img{
+display: flex;
+ width: 8rem;
+ justify-content: center;
+ align-items: center
+
+  }
+  /*rodapé da página #sobre*/
+    .rodape-sobre{
+        display: flex;
+        flex-direction: row;
+    align-items: center;
+        width: 18rem;
+        gap: 9rem;
+        margin-left: 15rem;
+        margin-top: -2rem;
+       
+    }
+
+
+    /*QUINTA PÁGINA*/
+
+    
+    #contato {
+        display: flex;
+        justify-content: center; /* Centraliza horizontalmente */
+        align-items: center; /* Centraliza verticalmente */
+        background-image: url('assets/escritorio.png');
+        background-repeat: no-repeat;
+        background-position:35%;
+        background-size:cover; /* Ajusta o tamanho da imagem para cobrir toda a área */
+        height: 100vh;
+      }
+
+      
+ /* Formulário */
+.formulario {
+    background-color: rgba(31, 39, 50, 0.8); /* rgba para dar um efeito de transparência */
+    width: 100%;
+    padding: 20px; /* Adiciona um espaço interno ao formulário */
+    max-width: 500px; /* Largura máxima do formulário */
+    color: white;
+    margin-top: 30rem;
+    margin-left: rem;
+  }
+  
+  .formulario h1 {
+    text-align: center; 
+    font-size: 2.2rem;
+  }
+  
+  .formulario .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .formulario .form-group label {
+    display: block;
+  }
+  
+  .formulario input[type="text"],
+  .formulario input[type="email"],
+  .formulario textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .formulario button {
+    width: 100%;
+    padding: 10px;
+    background-color: #CCAA60;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+
+
+  }
+  
+       
+  .formulario button:hover{
+    background: white;
+    color: black;
+  }
+
+
+
+
+
+  /*RODAPÉ*/
+
+  footer {
+    background: linear-gradient(to top, rgb(30, 42, 58)20%, rgb(36, 66, 98)80% );
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .logo img {
+    width: 20rem; /* Ajuste o tamanho conforme necessário */
+    margin-bottom: -8rem;
+    margin-top: -5rem ;
+  }
+  
+  .links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .links li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  .links a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  .social img {
+    width: 10px; /* Ajuste o tamanho conforme necessário */
+    margin-top: 10px;
+    color: white;
+    display: flex;
+    align-items: end;
+  }
+  
+  .social img:hover {
+    opacity: 0.7;
+  }
+  
+  /* Estilos para o texto de copyright */
+  .copyright {
+    margin-top: 20px;
+  }
+  
+  .copyright p {
+    font-size: 14px;
+    color: #666;
+    display: inline; /* Faz com que o texto e a imagem fiquem na mesma linha */
+  }
+  
+  .copyright img {
+    width: 20px; /* Ajuste o tamanho conforme necessário */
+    vertical-align: middle; /* Alinha verticalmente com o texto */
+    margin-left: 5px; /* Adiciona um pequeno espaço entre o texto e a imagem */
+  }
+
+  .address p{
+    margin-top: 2rem;
+    color: white;
+
+  }
+
+ 
+@media (min-width:70rem) {
+
+/* define a classe .page como um contêiner flexível com direção de coluna */
+.page{
+    display: flex;
+    flex-direction: column;
+        min-width: 70vh;
+       min-height: 100vh;
+    }
+    
+    
+    body {
+        background-color: #1B3148;
+        margin: 0 auto;
+    }
+    
+    
+    /*página home*/
+    #home {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+       width:100vw;
+    
+    }
+    
+    /*Imagem logo AS do cabeçalho*/
+    header img:nth-child(1){
+    
+        margin: auto;
+        justify-items: center;
+        align-items: center;
+       height: 8rem;
+       
+     
+     }
+     
+     /*cabeçalho da página - logo de alexandre dentro dele*/
+    header {
+    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1rem;
+        margin-bottom: -3rem;
+        width: 120rem;
+        margin: auto;
+        margin-bottom: -2rem;
+    
+       
+    }
+     /*imagem logo nome Alexandre Souza Advocacia no cabeçalho*/
+     header img:nth-child(2){
+     display: flex;
+         margin: auto;
+         justify-items: center;
+         align-items: center;
+        height: 5rem;
+     margin-top: 2rem;}
+    
+     /*acoplado as duas imagens do logo Alexandre - AS e nome por extenso*/
+    .logo-header{
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        grid-area: auto;
+        margin: auto;
+       
+    }
+    
+    /*cabeçalho do home - (menu bar, linhas */
+    .home-header {
+        margin-top: 3rem;
+        background-image: url(assets/banner.png);
+        background-repeat: initial;
+        background-position: center center;
+        width: 100%;
+    }
+    
+    /*Menu : Home | area de atuacao | sobre | contato */
+    .menu {
+        margin-right: 10rem;
+    }
+    
+    /*acoplado do MENU e dos botoes: contato e email */
+    .menuBar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+    }
+    
+    /*estilização da lista do menu bar*/
+    .menuBar ul {
+    
+        list-style: none;
+        padding: 0;
+    
+    }
+    /*estilização de cada item da lista do menu bar*/
+    .menuBar li {
+        display: inline;
+        margin: 0 10px;
+    
+    
+    }
+    /*ancora para entrar nas sections*/
+    .menuBar li a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.7rem;
+    }
+    /*ação ao passar o mouse por cima do MenuBar*/
+    .menuBar li a:hover{
+        color: #ccaa60;
+    }
+    
+    
+    /*linha divisória em cima e embaixo no menuBar*/
+    .linha {
+        margin: auto;
+    
+        border: .1px solid #4E555F;
+        width: 80rem;
+    }
+    
+    /*botoes para contato e email*/
+    .button-header {
+        display: flex;
+        margin-left: 3rem;
+        justify-content: center;
+        align-items: center;
+        height: 5rem;
+    
+    
+    }
+    
+    /*botao de contato*/
+    .contact-button {
+        margin-right: 3rem;
+    }
+    /*imagem botão de contato*/
+    .contact-button img {
+        display: flex;
+        max-width: 10rem;
+    }
+    /*imagem botao de email*/
+    .email-button img {
+        display: flex;
+        width: 19rem;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /*titulo principal da pagina home*/
+    header h1 {
+    
+        margin-right: 5rem;
+    
+        justify-content: center;
+        text-align: center;
+        font-size: 3.5rem;
+        color: white;
+        font-family: 'Cormorant Garamond', serif;
+    }
+    
+    
+    /*container com titulos e subtitulos principais do home e botão wpp*/
+    
+    .banner {
+        display: flex;
+        flex-direction: row;
+        margin: 10px auto;
+        height: 40rem;
+        width: 80rem;
+        align-items: center;
+        text-align: center;
+      
+    
+    }
+    
+    /*titulo principal do banner*/
+    .banner .banner-texto h1 {
+        width: 35rem;
+    
+        font-size: 55px;
+        color: #ffffff;
+        font-family: 'Cormorant Garamond', serif;
+        font-weight: bold;
+        text-align: justify;
+        margin-left: 2rem;
+    
+    
+    }
+    
+    /*Subtitulo banner */
+    
+    .banner .banner-texto h5 {
+        display: flex;
+        width: 38rem;
+        margin: 1rem 0 0 2rem;
+        color: #ccaa60;
+        font-size: 25px;
+        font-weight: 400;
+        font-family: 'Outfit', sans-serif;
+    
+    }
+    
+    /*foto de alexandre no home*/
+    .banner img {
+        display: flex;
+        margin-left: -3rem;
+        width: 20rem;
+    
+    
+
+    }
+    
+    /*container da foto de alexandre no home*/
+    .alexandre img {
+        display: flex;
+        width: auto;
+        height: 40rem;
+        align-items: end;
+        margin-top: -13.6rem;
+        margin-left: 23rem;
+    }
+    
+    /*botao do whatsapp*/
+    #button-whatsapp {
+        display: flex;
+        margin-top: 3rem;
+        width: 17rem;
+        height: 4rem;
+        background-color: #D1B06B;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-left: 2rem;
+    }
+
+    #button-whatsapp img{
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+
+    }
+    
+    #button-whatsapp a {
+        text-align: center;
+        text-decoration: none;
+        margin: auto;
+        font-family: 'Outfit', sans-serif;
+        font-size: 18px;
+        color: black;
+        width: 20rem;
+    
+    }
+    
+    #button-whatsapp:hover{
+        background-color:#e0c791;
+        color: white;
+    }
+    
+    
+    /*botão para site de consulta processual*/
+     #consultaProcessual{
+        height: 12rem;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(to right, rgba(209, 176, 107, 1) 2%, rgba(30, 42, 58, 1)70%);
+     }
+     #consultaProcessual h1{
+        color: white;
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 18px;
+       margin-bottom: 1.2rem;
+     
+    
+       
+     }
+    
+     /*botoes para consulta e-SAJ e Consulta Publica*/
+     .botaoConsulta{
+       
+        width: 12rem;
+        height: 3rem;
+       margin-right: 1rem;
+       border-radius: 5px;
+       color: white;
+       background: #1F2732;
+    cursor: pointer;
+     }
+    
+     .botaoConsulta:hover{
+        background: #D1B06B;
+     }
+    
+     #areas{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        min-width: 100%;
+       height: 60rem;
+        background:rgb(30, 42, 58) ;
+       
+       
+        
+     }
+    
+        
+     
+    .caixa {
+        display: flex;
+        flex-direction: column;
+      
+        width: 380px;
+        height:300px;
+        padding: 58px, 49px, 58px, 50px;
+      margin-bottom: 40px;
+     
+      margin-top: 10px;
+      border-radius: 10px;
+    background-color:#2E3947; 
+    align-items: center;
+    }
+    
+    .caixa:hover  {
+        transform: scale(1.1);
+    }
+    
+    .caixa h1{
+        color: white;
+       
+        font-family: 'Outfit', sans-serif;
+        font-weight: regular;
+    }
+    
+    
+    .caixa h5{
+        color: white;
+        margin-top: 10px;
+        padding: 20px;
+        font-family: 'Outfit', sans-serif;
+        font-weight: regular;
+        font-size: 14px;
+        text-align: justify;
+    
+    }
+    
+    
+    .contents {
+        margin: auto;
+        display: grid;
+        grid-template-columns: auto auto auto; /* Duas colunas com tamanhos iguais */
+        gap: 2rem;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    
+    .titulo-atuacao{
+        display: flex;
+        flex-direction: row;
+       padding-top: 80px;
+        margin: auto;
+        margin-bottom: 70px;
+        align-items: center;
+        justify-content: center;
+        text-align: justify;
+        width: 10rem;
+        gap: -30px;
+        
+    
+    }
+    
+    
+    
+    .titulo-atuacao1 img{ 
+        width: 70px;
+        height: 50px;
+        margin-left: 40px;
+    }
+    
+    .titulo-atuacao1{ 
+        margin-right: 200px;
+    }
+    
+    .titulo-atuacao1 h1{
+        font-family: 'Cormorant Garamond', serif;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 52px;
+    margin: auto;
+    
+    width: 400px;
+    
+    
+    color: white;
+    
+    
+    
+    }
+    
+    .titulo-atuacao2 h2{
+    margin-left: 180px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+    text-align: justify;
+    width: 38rem;
+        
+    }
+    
+    .titulo-atuacao2 h2 span{
+        color: #D1B06B;
+    }
+    
+    .divisor-atuacao{
+        display: flex;
+      margin-left: -11rem;
+      margin-right: rem;
+        align-items: center;
+    }
+    
+    
+    .titulo-caixa {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      
+    }
+    
+    .titulo-caixa img{
+        display: flex;
+        margin-left: 10px;
+        
+        height: 30px;
+        width: 30px;
+     margin-top: 20px;
+    
+    }
+    
+    
+    
+    .linha1 {
+        margin-top: 10px;
+        border: .1px solid #4E555F;
+        width: 20rem;
+    }
+    
+    
+    
+    #sobre{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to top, rgb(30, 42, 58)20%, rgb(36, 66, 98)80% );
+    }
+    
+    /*imagens do carossel - página #sobre*/
+  
+    /*carrossel imagem página #sobre*/
+    
+    
+    /*container da pagina #sobre*/
+    .pagesobre {
+        display: flex;
+        flex-direction: row;
+      margin: auto;
+      width: 80rem;
+      height: 60rem;
+      margin-top:-12rem;
+      }
+      
+    /*primeira parte da página sobre : imagens do carrossel */
+      .sobre-parte1{
+        display: flex;
+        justify-content: center;
+    
+      }
+      
+      /*parte dois da pagina #sobre, titulo, subtitulo, rodapé */
+      .sobre-parte2 {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10rem;
+       
+      }
+    
+      /*titulo da página sobre "nosso escritorio" */
+    .sobre-parte2 h1 {
+        font-family: 'Cormorant Garamond', serif;
+        color: #ffffff;
+        padding-top: -2rem;
+        margin-top: 5rem;
+        font-size: 40px;
+    }
+    
+    /*texto página #sobre*/
+    
+    .sobre-parte2 h5{
+        width: 40rem;
+        margin: 1rem auto;
+        font-family: 'Cormorant Garamond', serif;
+        color: #ffffff;
+        font-size: 25px;
+        margin-bottom: 5rem;
+        text-align: justify;
+    
+    }
+    /*container - imagem do rodapé*/
+    .sobre-parte2 img{
+        width: 5.5rem;
+    }
+    
+    /*container da imagem de alexandre #sobre*/
+    #alexandre-circulo {
+        display: flex;
+        margin: auto;
+    }
+    
+    #alexandre-circulo h3{
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Cormorant Garamond', serif;
+        color: #ffffff;
+        font-size: 22px;
+        font-weight: 700;
+        width: 10rem;
+    
+    }
+    
+    /*alexandre foto em circulo na página #sobre*/
+    #alexandre-circulo img{
+    display: flex;
+     width: 4rem;
+     justify-content: center;
+     align-items: center;
+    
+      }
+    
+      /*anos de experiencia img - pagina #sobre*/
+      #anos-exp img{
+    display: flex;
+     width: 13rem;
+     justify-content: center;
+     align-items: center
+    
+      }
+      /*rodapé da página #sobre*/
+        .rodape-sobre{
+            display: flex;
+            flex-direction: row;
+            width: 22rem;
+            margin-top:1rem;
+            gap: 15rem;
+           
+           
+        }
+    
+    
+        #contato {
+            display: flex;
+            justify-content: center; /* Centraliza horizontalmente */
+            align-items: center; /* Centraliza verticalmente */
+            background-image: url('assets/escritorio.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover; /* Ajusta o tamanho da imagem para cobrir toda a área */
+            height: 100vh;
+          }
+        
+      
+    
+    
+     /* Formulário */
+    .formulario {
+        background-color: rgba(31, 39, 50, 0.8); /* rgba para dar um efeito de transparência */
+        width: 100%;
+        padding: 20px; /* Adiciona um espaço interno ao formulário */
+        max-width: 500px; /* Largura máxima do formulário */
+        color: white;
+        margin-top: 0rem;
+        margin-left: 40rem;
+      }
+      
+      .formulario h1 {
+        text-align: center; 
+        font-size: 2.2rem;
+      }
+      
+      .formulario .form-group {
+        margin-bottom: 15px;
+      }
+      
+      .formulario .form-group label {
+        display: block;
+      }
+      
+      .formulario input[type="text"],
+      .formulario input[type="email"],
+      .formulario textarea {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      
+      .formulario button {
+        width: 100%;
+        padding: 10px;
+        background-color: #CCAA60;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+    
+    
+      }
+      
+           
+      .formulario button:hover{
+        background: white;
+        color: black;
+      }
+     
+    
+      footer {
+        background: linear-gradient(to top, rgb(30, 42, 58)20%, rgb(36, 66, 98)80% );
+        padding: 20px 0;
+        text-align: center;
+      }
+      
+      .logo img {
+        width: 20rem; /* Ajuste o tamanho conforme necessário */
+        margin-bottom: -8rem;
+        margin-top: -5rem ;
+      }
+      
+      .links ul {
+        list-style: none;
+        padding: 0;
+      }
+      
+      .links li {
+        display: inline;
+        margin: 0 10px;
+      }
+      
+      .links a {
+        text-decoration: none;
+        color: #ffffff;
+      }
+      
+      .social img {
+        width: 10px; /* Ajuste o tamanho conforme necessário */
+        margin-top: 10px;
+        color: white;
+        display: flex;
+        align-items: end;
+      }
+      
+      .social img:hover {
+        opacity: 0.7;
+      }
+      
+      /* Estilos para o texto de copyright */
+      .copyright {
+        margin-top: 20px;
+      }
+      
+      .copyright p {
+        font-size: 14px;
+        color: #666;
+        display: inline; /* Faz com que o texto e a imagem fiquem na mesma linha */
+      }
+      
+      .copyright img {
+        width: 20px; /* Ajuste o tamanho conforme necessário */
+        vertical-align: middle; /* Alinha verticalmente com o texto */
+        margin-left: 5px; /* Adiciona um pequeno espaço entre o texto e a imagem */
+      }
+    
+      .address p{
+        margin-top: 2rem;
+        color: white;
+    
+      }
+
+
 }
 
 
+/*@MEDIA +50REM E -135REM*/
+@media (min-width: 70em) and (max-width:85em ) {
 
+    /* Define estilos de reset para garantir consistência entre os navegadores */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    
+    /* Define o tamanho de fonte base para rem, utilizando 62.5% da escala (10px) */
+    :root {
+        font-size: 62, 5%;
+    }
+    
+    /* define a classe .page como um contêiner flexível com direção de coluna */
+    .page{
+    display: flex;
+    flex-direction: column;
+        min-width: 70vh;
+       min-height: 100vh;
+    }
+    
+    
+    body {
+        background-color: #1B3148;
+        margin: 0 auto;
+    }
+    
+    
+        #home {
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+           width:100%;
+           
+    }
+    
+    /*Imagem logo AS do cabeçalho*/
+    header img:nth-child(1){
+        display:flex;
+        margin: auto;
+        
+       height: 8rem;
+       
+     
+     }
+     
+     /*cabeçalho da página - logo de alexandre dentro dele*/
+    header {
+    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1rem;
+        margin-bottom: -3rem;
+        width: 120rem;
+        margin: auto;
+        margin-bottom: -2rem;
+    
+       
+    }
+     /*imagem logo nome Alexandre Souza Advocacia no cabeçalho*/
+     header img:nth-child(2){
+     display: flex;
+         margin: auto;
+         justify-items: center;
+         align-items: center;
+        height: 5rem;
+     margin-top: 2rem;
+    }
+    
+     /*acoplado as duas imagens do logo Alexandre - AS e nome por extenso*/
+    .logo-header{
+        display: flex;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        grid-area: auto;
+        margin: auto;
+    
+       
+    }
+    
+    /*cabeçalho do home - (menu bar, linhas */
+    .home-header {
+        margin-top: 3rem;
+        background-image: url(assets/banner.png);
+        background-repeat: initial;
+        background-position: center center;
+        width: 100%;
+    }
+    
+    /*Menu : Home | area de atuacao | sobre | contato */
+    .menu {
+        margin-right: 10rem;
+    }
+    
+    /*acoplado do MENU e dos botoes: contato e email */
+    .menuBar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+    }
+    
+    /*estilização da lista do menu bar*/
+    .menuBar ul {
+    
+        list-style: none;
+        padding: 0;
+    
+    }
+    /*estilização de cada item da lista do menu bar*/
+    .menuBar li {
+        display: inline;
+        margin: 0 10px;
+    
+    
+    }
+    /*ancora para entrar nas sections*/
+    .menuBar li a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.2rem;
+    }
+    /*ação ao passar o mouse por cima do MenuBar*/
+    .menuBar li a:hover{
+        color: #ccaa60;
+    }
+    
+    
+    /*linha divisória em cima e embaixo no menuBar*/
+    .linha {
+        margin: auto;
+    
+        border: .1px solid #4E555F;
+        width: 80rem;
+    }
+    
+    /*botoes para contato e email*/
+    .button-header {
+        display: flex;
+        margin-left: 3rem;
+        justify-content: center;
+        align-items: center;
+        height: 5rem;
+    
+    
+    }
+    
+    /*botao de contato*/
+    .contact-button {
+        margin-right: 3rem;
+    }
+    /*imagem botão de contato*/
+    .contact-button img {
+        display: flex;
+        max-width: 10rem;
+    }
+    /*imagem botao de email*/
+    .email-button img {
+        display: flex;
+        width: 19rem;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /*titulo principal da pagina home*/
+    header h1 {
+    
+        margin-right: 5rem;
+    
+        justify-content: center;
+        text-align: center;
+        font-size: 3.5rem;
+        color: white;
+        font-family: 'Cormorant Garamond', serif;
+    }
+    
+    
+    /*container com titulos e subtitulos principais do home e botão wpp*/
+    
+    .banner {
+        display: flex;
+        flex-direction: row;
+        margin: 10px auto;
+        height: 40rem;
+        width: 80rem;
+        align-items: center;
+        text-align: center;
+    
+    }
+    
+    /*titulo principal do banner*/
+    .banner .banner-texto h1 {
+        width: 35rem;
+    
+        font-size: 55px;
+        color: #ffffff;
+        font-family: 'Cormorant Garamond', serif;
+        font-weight: bold;
+        text-align: justify;
+    
+    
+    }
+    
+    /*Subtitulo banner */
+    
+    .banner h5 {
+        margin: 1rem 0 0 -4rem;
+        color: #ccaa60;
+        font-size: 22px;
+        font-weight: 400;
+        font-family: 'Outfit', sans-serif;
+    
+    }
+    
+    /*foto de alexandre no home*/
+    .banner img {
+        display: flex;
+        align-items: flex-start;
+    }
+    
+    /*container da foto de alexandre no home*/
+    .alexandre {
+        display: flex;
+        margin-left: -25em;
+       
+    
+    }
+    
+    /*botao do whatsapp*/
+    #button-whatsapp {
+        display: flex;
+        margin-top: 3rem;
+        width: 18rem;
+        height: 4rem;
+        background-color: #D1B06B;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    #button-whatsapp a {
+        text-align: center;
+        text-decoration: none;
+        margin: auto;
+        font-family: 'Outfit', sans-serif;
+        font-size: 18px;
+        color: black;
+    
+    }
+    
+    #button-whatsapp:hover{
+        background-color:#e0c791;
+        color: white;
+    }
+    
+    #areas{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        min-width: 100%;
+       height: 60rem;
+        background:rgb(30, 42, 58) ;
+       
+       
+        
+     }
+    
+        
+     
+    .caixa {
+        display: flex;
+        flex-direction: column;
+      
+        width: 380px;
+        height:300px;
+        padding: 58px, 49px, 58px, 50px;
+      margin-bottom: 40px;
+     
+      margin-top: 10px;
+      border-radius: 10px;
+    background-color:#2E3947; 
+    align-items: center;
+    }
+    
+    .caixa:hover  {
+        transform: scale(1.1);
+    }
+    
+    .caixa h1{
+        color: white;
+       
+        font-family: 'Outfit', sans-serif;
+        font-weight: regular;
+    }
+    
+    
+    .caixa h5{
+        color: white;
+        margin-top: 10px;
+        padding: 20px;
+        font-family: 'Outfit', sans-serif;
+        font-weight: regular;
+        font-size: 14px;
+        text-align: justify;
+    
+    }
+    
+    
+    .contents {
+        margin: auto;
+        display: grid;
+        grid-template-columns: auto auto auto; /* Duas colunas com tamanhos iguais */
+        gap: 2rem;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    
+    .titulo-atuacao{
+        display: flex;
+       padding-top: 80px;
+        margin: auto;
+        margin-bottom: 70px;
+        align-items: center;
+        justify-content: center;
+        text-align: justify;
+        width: 5rem;
+        gap: -30px;
+        
+    
+    }
+    
+    
+    
+    .titulo-atuacao1 img{ 
+        width: 70px;
+        height: 50px;
+        margin-left: 10rem;
+    }
+    
+    .titulo-atuacao1{ 
+        margin-right: 200px;
+    }
+    
+    .titulo-atuacao1 h1{
+        font-family: 'Cormorant Garamond', serif;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 52px;
+    margin: auto;
+    margin-left: 10rem;
+    
+    width: 400px;
+    
+    
+    color: white;
+    
+    
+    
+    }
+    
+    .titulo-atuacao2 h2{
+    margin-left: 180px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+    text-align: justify;
+    width: 28rem;
+    margin-right: 7rem;        
+    }
+    
+    .titulo-atuacao2 h2 span{
+        color: #D1B06B;
+    }
+    
+    .divisor-atuacao{
+        display: flex;
+      margin-left: -11rem;
+      margin-right: rem;
+        align-items: center;
+    }
+    
+    
+    .titulo-caixa {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      
+    }
+    
+    .titulo-caixa img{
+        display: flex;
+        margin-left: 10px;
+        
+        height: 30px;
+        width: 30px;
+     margin-top: 20px;
+    
+    }
+    
+    
+    
+    .linha1 {
+        margin-top: 10px;
+        border: .1px solid #4E555F;
+        width: 20rem;
+    }
+
+    
 #sobre{
     display: flex;
     width: 100%;
@@ -502,7 +1937,7 @@ margin-left: 5rem;
   .sobre-parte2 {
     display: flex;
     flex-direction: column;
-    margin-left: 10rem;
+    margin-left: 5rem;
    
   }
 
@@ -573,144 +2008,10 @@ display: flex;
         display: flex;
         flex-direction: row;
         width: 22rem;
-        gap: 3rem;
+        gap: 10rem;
        
        
     }
-
-
-    #contato {
-        display: flex;
-        justify-content: center; /* Centraliza horizontalmente */
-        align-items: center; /* Centraliza verticalmente */
-        background-image: url('assets/escritorio.png');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover; /* Ajusta o tamanho da imagem para cobrir toda a área */
-        height: 100vh;
-      }
     
-  
-
-
- /* Formulário */
-.formulario {
-    background-color: rgba(31, 39, 50, 0.8); /* rgba para dar um efeito de transparência */
-    width: 100%;
-    padding: 20px; /* Adiciona um espaço interno ao formulário */
-    max-width: 500px; /* Largura máxima do formulário */
-    color: white;
-    margin-top: 0rem;
-    margin-left: 40rem;
-  }
-  
-  .formulario h1 {
-    text-align: center; 
-    font-size: 2.2rem;
-  }
-  
-  .formulario .form-group {
-    margin-bottom: 15px;
-  }
-  
-  .formulario .form-group label {
-    display: block;
-  }
-  
-  .formulario input[type="text"],
-  .formulario input[type="email"],
-  .formulario textarea {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  
-  .formulario button {
-    width: 100%;
-    padding: 10px;
-    background-color: #CCAA60;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-
-
-  }
-  
-       
-  .formulario button:hover{
-    background: white;
-    color: black;
-  }
-  /* Responsividade */
-  @media screen and (max-width: 600px) {
-    .formulario{
-      width: 90%; /* Ajuste a largura para telas menores */
+    
     }
-  }
-
-  footer {
-    background: linear-gradient(to top, rgb(30, 42, 58)20%, rgb(36, 66, 98)80% );
-    padding: 20px 0;
-    text-align: center;
-  }
-  
-  .logo img {
-    width: 20rem; /* Ajuste o tamanho conforme necessário */
-    margin-bottom: -8rem;
-    margin-top: -5rem ;
-  }
-  
-  .links ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .links li {
-    display: inline;
-    margin: 0 10px;
-  }
-  
-  .links a {
-    text-decoration: none;
-    color: #ffffff;
-  }
-  
-  .social img {
-    width: 10px; /* Ajuste o tamanho conforme necessário */
-    margin-top: 10px;
-    color: white;
-    display: flex;
-    align-items: end;
-  }
-  
-  .social img:hover {
-    opacity: 0.7;
-  }
-  
-  /* Estilos para o texto de copyright */
-  .copyright {
-    margin-top: 20px;
-  }
-  
-  .copyright p {
-    font-size: 14px;
-    color: #666;
-    display: inline; /* Faz com que o texto e a imagem fiquem na mesma linha */
-  }
-  
-  .copyright img {
-    width: 20px; /* Ajuste o tamanho conforme necessário */
-    vertical-align: middle; /* Alinha verticalmente com o texto */
-    margin-left: 5px; /* Adiciona um pequeno espaço entre o texto e a imagem */
-  }
-
-  .address p{
-    margin-top: 2rem;
-    color: white;
-
-  }
