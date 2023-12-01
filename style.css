@@ -20,7 +20,7 @@
 .page{
 display: flex;
 flex-direction: column;
-    min-width: 70vh;
+    min-width: 100vh;
    min-height: 100vh;
 }
 
@@ -52,8 +52,8 @@ body {
     align-items: center;
     justify-content: center;
     margin-top: 1rem;
-    margin-bottom: -3rem;
-    width: 120rem;
+   
+    width: 80%;
     margin: auto;
     margin-top:1rem;
    
@@ -61,33 +61,29 @@ body {
  /*acoplado as duas imagens do logo Alexandre - AS e nome por extenso*/
         
  .logo-header {
+    margin: auto;
+    margin-top: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 10rem;
-    margin-right: 90rem;
+    width: 100%;
+height: 5rem;
 }
 
 
     /*Imagem logo AS do cabeçalho*/
-header img:nth-child(1){
-
+header img{
+display: flex;
     margin: auto;
     justify-items: center;
     align-items: center;
-   height: 8rem;
+   width: 15rem;
+   
    
  
  }
     
- /*imagem logo nome Alexandre Souza Advocacia no cabeçalho*/
- header img:nth-child(2){
-    display: flex;
-        margin: auto;
-        justify-items: center;
-        align-items: center;
-       height: 5rem;
-    margin-top: 2rem;}
+ 
    
    
  
@@ -104,9 +100,9 @@ header img:nth-child(1){
 /*linha divisória em cima e embaixo no menuBar*/
 .linha {
     margin: auto;
-
+align-items: center;
     border: .1px solid #4E555F;
-    width: 30rem;
+    width: 100%;
 }
 
 .menuBar {
@@ -115,6 +111,13 @@ header img:nth-child(1){
     justify-content: center;
     align-items: center;
     margin-top: 2rem;
+    margin: auto;;
+    width: 90%;
+}
+
+.menu{
+    display: flex;
+    margin-top:.5rem;
 }
 
 .menuBar ul {
@@ -169,7 +172,7 @@ header img:nth-child(1){
     flex-direction: row;
     margin: 10px auto;
     height: 40rem;
-    width: 80rem;
+    width: 100%;
     align-items: center;
     text-align: center;
 
@@ -218,10 +221,11 @@ header img:nth-child(1){
 
 #button-whatsapp{
     display: flex;
+    flex-direction: row;
     margin-top: 2rem;
     margin-left: -2rem;
     height: 5rem;
-    width: 12rem;
+    width: 12em;
     background-color: #D1B06B;
     border-radius: 10%;
     cursor: pointer; 
@@ -229,23 +233,25 @@ header img:nth-child(1){
 
 }
 
-#button-whatsapp IMG {
+#button-whatsapp img {
     display: flex;
     width: 2rem;
-    margin-top: 1.8rem;
+    justify-content: center;
+    margin: auto;
+    
     
     
 }
 #button-whatsapp a {
-    width: 8rem;
+    width: 5rem;
     text-align: center;
     text-decoration: none;
     align-items: center;
     margin: auto;
-    margin-left: -.6rem;
     font-family: 'Outfit', sans-serif;
     font-size: 15px;
     color: black;
+    margin-left: -1.5rem;
 
 }
 
@@ -258,7 +264,7 @@ header img:nth-child(1){
 .alexandre{
     display: flex;
 height: 66%;
-margin-left: -10rem;
+margin-left: -15rem;
 margin-top: 15rem;
 }
 
@@ -480,38 +486,46 @@ width: 25rem;
 
 #sobre{
     display: flex;
+    margin: auto;
+    align-items: center;
     width: 100%;
-    height: 90vh;
+    height: 80vh;
     background: linear-gradient(to top, rgb(30, 42, 58)20%, rgb(36, 66, 98)80% );
 }
 
 /*imagens do carossel - página #sobre*/
 .slides img {
-    display: none;
+   margin:auto;
+    display: flex;
     border-radius: 1rem; 
-    width: auto;
-    height: 20rem;
+    width: 100%;
+    align-items: center;
+    height: 50%;
+    
 
 }
 /*carrossel imagem página #sobre*/
 .slides{
     display: flex;
-    margin:auto;
-margin-left: 5rem;
+    flex-direction: column;
     align-items: center;
-    width: 30rem;
+
+margin:auto;
+
+    width: 100%;
 
 }
 /*container da pagina #sobre*/
 .pagesobre {
     display: flex;
     flex-direction: column;
+    
     height: 130vh;
   margin: auto;
   margin-top: 2rem;
  align-items: center;
-margin-left: -6rem;
-  width: 80rem;
+
+  width: 100%;
   }
 
  
@@ -519,6 +533,9 @@ margin-left: -6rem;
 /*primeira parte da página sobre : imagens do carrossel */
   .sobre-parte1{
     display: flex;
+  
+    width: 100%;
+    align-items: center;
     
   }
   
@@ -528,7 +545,8 @@ margin-left: -6rem;
     flex-direction: column;
     align-items: center;
     margin-top: -1rem;
-    margin-left: 10rem;
+   
+    width: 100%;
     
  
    
@@ -542,7 +560,7 @@ margin-left: -6rem;
     padding-top: -2rem;
     margin-top: 5rem;
     font-size: 40px;
-    margin-left: -4rem;
+    align-items: center;
     text-align: center;
 }
 
@@ -591,6 +609,7 @@ margin-left: -6rem;
 #alexandre-circulo img{
 display: flex;
  width: 3rem;
+ margin:auto;
  justify-content: center;
  align-items: center;
 
@@ -599,7 +618,8 @@ display: flex;
   /*anos de experiencia img - pagina #sobre*/
   #anos-exp img{
 display: flex;
- width: 8rem;
+ width: 5rem;
+ margin:auto;
  justify-content: center;
  align-items: center
 
@@ -609,10 +629,10 @@ display: flex;
         display: flex;
         flex-direction: row;
     align-items: center;
-        width: 18rem;
-        gap: 9rem;
-        margin-left: 15rem;
-        margin-top: -2rem;
+        width: 70%;
+     margin:auto;
+    
+        margin-top: -3rem;
        
     }
 
@@ -718,6 +738,11 @@ display: flex;
     text-decoration: none;
     color: #ffffff;
   }
+
+  .links li a:hover {
+    text-decoration: none;
+    color: #CCAA60;
+  }
   
   .social img {
     width: 10px; /* Ajuste o tamanho conforme necessário */
@@ -755,13 +780,13 @@ display: flex;
   }
 
  
-@media (min-width:70rem) {
+@media (min-width:85.1em) {
 
 /* define a classe .page como um contêiner flexível com direção de coluna */
 .page{
     display: flex;
     flex-direction: column;
-        min-width: 70vh;
+        min-width: 100%;
        min-height: 100vh;
     }
     
@@ -777,17 +802,17 @@ display: flex;
         display: flex;
         flex-direction: column;
         margin: 0 auto;
-       width:100vw;
+       width:100%;
     
     }
     
     /*Imagem logo AS do cabeçalho*/
-    header img:nth-child(1){
+    header img{
     
         margin: auto;
         justify-items: center;
         align-items: center;
-       height: 8rem;
+       width: 20rem;
        
      
      }
@@ -801,28 +826,21 @@ display: flex;
         justify-content: center;
         margin-top: 1rem;
         margin-bottom: -3rem;
-        width: 120rem;
+        width: 100%;
+        height: 15rem;
         margin: auto;
         margin-bottom: -2rem;
     
        
     }
-     /*imagem logo nome Alexandre Souza Advocacia no cabeçalho*/
-     header img:nth-child(2){
-     display: flex;
-         margin: auto;
-         justify-items: center;
-         align-items: center;
-        height: 5rem;
-     margin-top: 2rem;}
+     
     
      /*acoplado as duas imagens do logo Alexandre - AS e nome por extenso*/
     .logo-header{
-        display: grid;
-        grid-template-columns: auto auto;
+        display: flex;
         justify-content: center;
-        grid-area: auto;
         margin: auto;
+        width: 10rem;
        
     }
     
@@ -1017,7 +1035,8 @@ display: flex;
         font-family: 'Outfit', sans-serif;
         font-size: 18px;
         color: black;
-        width: 20rem;
+        width: 11rem;
+        margin-left: -1rem;
     
     }
     
@@ -1219,7 +1238,7 @@ display: flex;
     .linha1 {
         margin-top: 10px;
         border: .1px solid #4E555F;
-        width: 20rem;
+        width: 100%;
     }
     
     
@@ -1327,9 +1346,9 @@ display: flex;
         .rodape-sobre{
             display: flex;
             flex-direction: row;
-            width: 22rem;
+            width: 80%;
             margin-top:1rem;
-            gap: 15rem;
+            gap:2rem;
            
            
         }
@@ -1471,7 +1490,7 @@ display: flex;
 
 
 /*@MEDIA +50REM E -135REM*/
-@media (min-width: 70em) and (max-width:85em ) {
+@media (min-width: 55em) and (max-width:85em ) {
 
     /* Define estilos de reset para garantir consistência entre os navegadores */
     * {
@@ -1490,7 +1509,7 @@ display: flex;
     .page{
     display: flex;
     flex-direction: column;
-        min-width: 70vh;
+        min-width: 100%;
        min-height: 100vh;
     }
     
@@ -1510,11 +1529,10 @@ display: flex;
     }
     
     /*Imagem logo AS do cabeçalho*/
-    header img:nth-child(1){
+    header img{
         display:flex;
         margin: auto;
-        
-       height: 8rem;
+    width: 15rem;
        
      
      }
@@ -1528,21 +1546,14 @@ display: flex;
         justify-content: center;
         margin-top: 1rem;
         margin-bottom: -3rem;
-        width: 120rem;
+        width:80%;
+        height: 10rem;
         margin: auto;
         margin-bottom: -2rem;
     
        
     }
-     /*imagem logo nome Alexandre Souza Advocacia no cabeçalho*/
-     header img:nth-child(2){
-     display: flex;
-         margin: auto;
-         justify-items: center;
-         align-items: center;
-        height: 5rem;
-     margin-top: 2rem;
-    }
+    
     
      /*acoplado as duas imagens do logo Alexandre - AS e nome por extenso*/
     .logo-header{
@@ -1566,7 +1577,7 @@ display: flex;
     
     /*Menu : Home | area de atuacao | sobre | contato */
     .menu {
-        margin-right: 10rem;
+      width: 90%;
     }
     
     /*acoplado do MENU e dos botoes: contato e email */
@@ -1609,7 +1620,7 @@ display: flex;
         margin: auto;
     
         border: .1px solid #4E555F;
-        width: 80rem;
+        width: 100%;
     }
     
     /*botoes para contato e email*/
@@ -1666,7 +1677,7 @@ display: flex;
         flex-direction: row;
         margin: 10px auto;
         height: 40rem;
-        width: 80rem;
+        width: 100%;
         align-items: center;
         text-align: center;
     
@@ -1693,6 +1704,7 @@ display: flex;
         font-size: 22px;
         font-weight: 400;
         font-family: 'Outfit', sans-serif;
+        width: 35rem;
     
     }
     
@@ -1703,11 +1715,23 @@ display: flex;
     }
     
     /*container da foto de alexandre no home*/
-    .alexandre {
+    .alexandre  {
         display: flex;
-        margin-left: -25em;
+       justify-content: center;
+       
+       
        
     
+    }
+
+
+    .alexandre img {
+        display: flex;
+        width: auto;
+        height: 40rem;
+        align-items: end;
+        margin-top: -13.6rem;
+        margin-left: 6rem;
     }
     
     /*botao do whatsapp*/
@@ -1721,15 +1745,41 @@ display: flex;
         cursor: pointer;
     }
     
-    #button-whatsapp a {
-        text-align: center;
-        text-decoration: none;
-        margin: auto;
-        font-family: 'Outfit', sans-serif;
-        font-size: 18px;
-        color: black;
+ 
+#button-whatsapp{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+    margin-left: -2rem;
+    height: 5rem;
+    width: 20em;
+    background-color: #D1B06B;
+    cursor: pointer; 
+
+
+}
+
+#button-whatsapp img {
+    display: flex;
+    width: 2rem;
+    justify-content: center;
+    margin: auto;
     
-    }
+    
+    
+}
+#button-whatsapp a {
+    width: 10em;
+    text-align: center;
+    text-decoration: none;
+    align-items: center;
+    margin: auto;
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    color: black;
+    margin-left: -1.5rem;
+
+}
     
     #button-whatsapp:hover{
         background-color:#e0c791;
@@ -1740,8 +1790,8 @@ display: flex;
         display: flex;
         flex-direction: column;
         margin: 0 auto;
-        min-width: 100%;
-       height: 60rem;
+        width: 80%;
+       height: 100%;
         background:rgb(30, 42, 58) ;
        
        
@@ -1754,9 +1804,9 @@ display: flex;
         display: flex;
         flex-direction: column;
       
-        width: 380px;
-        height:300px;
-        padding: 58px, 49px, 58px, 50px;
+        max-width: 30%;
+        height:20rem;
+        padding: 38px, 29px, 38px, 20px;
       margin-bottom: 40px;
      
       margin-top: 10px;
@@ -1771,7 +1821,7 @@ display: flex;
     
     .caixa h1{
         color: white;
-       
+       font-size: 20px;
         font-family: 'Outfit', sans-serif;
         font-weight: regular;
     }
@@ -1780,7 +1830,7 @@ display: flex;
     .caixa h5{
         color: white;
         margin-top: 10px;
-        padding: 20px;
+        padding: 16px;
         font-family: 'Outfit', sans-serif;
         font-weight: regular;
         font-size: 14px;
@@ -1791,23 +1841,25 @@ display: flex;
     
     .contents {
         margin: auto;
-        display: grid;
-        grid-template-columns: auto auto auto; /* Duas colunas com tamanhos iguais */
-        gap: 2rem;
+        display: flex;
+        flex-direction: row;
         align-items: center;
         justify-content: center;
+     
     }
     
     
+   
     .titulo-atuacao{
         display: flex;
+        flex-direction: row;
        padding-top: 80px;
         margin: auto;
         margin-bottom: 70px;
         align-items: center;
         justify-content: center;
         text-align: justify;
-        width: 5rem;
+        width: 10rem;
         gap: -30px;
         
     
@@ -1818,7 +1870,7 @@ display: flex;
     .titulo-atuacao1 img{ 
         width: 70px;
         height: 50px;
-        margin-left: 10rem;
+        margin-left: 20px;
     }
     
     .titulo-atuacao1{ 
@@ -1827,12 +1879,11 @@ display: flex;
     
     .titulo-atuacao1 h1{
         font-family: 'Cormorant Garamond', serif;
-    font-size: 35px;
+    font-size: 45px;
     font-weight: 700;
     line-height: 52px;
     margin: auto;
-    margin-left: 10rem;
-    
+   
     width: 400px;
     
     
@@ -1852,8 +1903,9 @@ display: flex;
     text-align: left;
     color: white;
     text-align: justify;
-    width: 28rem;
-    margin-right: 7rem;        
+    width: 16rem;
+    height: auto;;
+        
     }
     
     .titulo-atuacao2 h2 span{
@@ -1867,7 +1919,8 @@ display: flex;
         align-items: center;
     }
     
-    
+   
+   
     .titulo-caixa {
         display: flex;
         flex-direction: column;
@@ -1891,14 +1944,13 @@ display: flex;
     .linha1 {
         margin-top: 10px;
         border: .1px solid #4E555F;
-        width: 20rem;
-    }
+        width: 70%;}
 
     
 #sobre{
     display: flex;
     width: 100%;
-    height: 50rem;
+    height: 90vh;
     background: linear-gradient(to top, rgb(30, 42, 58)20%, rgb(36, 66, 98)80% );
 }
 
@@ -1907,37 +1959,50 @@ display: flex;
     display: none;
     border-radius: 1rem; 
     width: auto;
-    height: 20rem;
+    height: 25rem;
+    align-items: center;
+    justify-content: center;
 
 }
 /*carrossel imagem página #sobre*/
 .slides{
     display: flex;
     margin:auto;
-margin-left: 5rem;
+margin-top: 2rem;
     align-items: center;
-    width: 30rem;
+   
+    
 
 }
 
 /*container da pagina #sobre*/
 .pagesobre {
     display: flex;
-  margin: auto;
-  width: 80rem;
+
+  width:100%;
+  align-items: center;
+
   }
   
 /*primeira parte da página sobre : imagens do carrossel */
   .sobre-parte1{
     display: flex;
-    justify-content: center;
+  
+    align-items: center;
+    margin-bottom: -40rem;
   }
   
   /*parte dois da pagina #sobre, titulo, subtitulo, rodapé */
   .sobre-parte2 {
     display: flex;
-    flex-direction: column;
-    margin-left: 5rem;
+    margin: auto;
+    width: 100%;
+    margin-top: -rem;
+   
+
+   
+  
+   
    
   }
 
@@ -1946,8 +2011,8 @@ margin-left: 5rem;
     font-family: 'Cormorant Garamond', serif;
     color: #ffffff;
     padding-top: -2rem;
-    margin-top: 5rem;
     font-size: 40px;
+    margin-top: -1rem;
 }
 
 /*texto página #sobre*/
@@ -1993,25 +2058,32 @@ display: flex;
  justify-content: center;
  align-items: center;
 
+
   }
 
   /*anos de experiencia img - pagina #sobre*/
   #anos-exp img{
 display: flex;
- width: 13rem;
+ width: 8rem;
  justify-content: center;
- align-items: center
+ align-items: center;
+
+
 
   }
   /*rodapé da página #sobre*/
     .rodape-sobre{
         display: flex;
+        align-items: center;
+      
         flex-direction: row;
-        width: 22rem;
-        gap: 10rem;
+        width: 40%;
+       
+        
        
        
     }
     
     
     }
+    
