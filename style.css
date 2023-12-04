@@ -37,7 +37,7 @@ body {
         flex-direction: column;
         margin: 0 auto;
        max-width:100%;
-       height: 100%;
+       height: 120%;
     
     }
     
@@ -222,7 +222,7 @@ align-items: center;
 #button-whatsapp{
     display: flex;
     flex-direction: row;
-    margin-top: 2rem;
+    margin-top: -rem;
     margin-left: -2rem;
     height: 5rem;
     width: 12em;
@@ -261,11 +261,13 @@ align-items: center;
 }
 
 
-.alexandre{
-    display: flex;
-height: 66%;
-margin-left: -15rem;
-margin-top: 15rem;
+.banner img:nth-child(2){
+    display: none;
+height: 70%;
+width: auto;
+margin-left: -20rem;
+
+margin: auto;
 }
 
 
@@ -331,7 +333,7 @@ cursor: pointer;
     flex-direction: column;
   
     width: 350px;
-    height:300px;
+    height:350px;
     padding: 58px, 49px, 58px, 50px;
   margin-bottom: 40px;
  
@@ -489,7 +491,7 @@ width: 25rem;
     margin: auto;
     align-items: center;
     width: 100%;
-    height: 80vh;
+    height: 100%;
     background: linear-gradient(to top, rgb(30, 42, 58)20%, rgb(36, 66, 98)80% );
 }
 
@@ -511,8 +513,9 @@ width: 25rem;
     align-items: center;
 
 margin:auto;
-
-    width: 100%;
+margin-top: 1rem;
+    width: 80%;
+    margin-bottom: 3rem;
 
 }
 /*container da pagina #sobre*/
@@ -520,7 +523,7 @@ margin:auto;
     display: flex;
     flex-direction: column;
     
-    height: 130vh;
+    height:  100%;
   margin: auto;
   margin-top: 2rem;
  align-items: center;
@@ -558,31 +561,32 @@ margin:auto;
     font-family: 'Cormorant Garamond', serif;
     color: #ffffff;
     padding-top: -2rem;
-    margin-top: 5rem;
+    margin-top: 2rem;
     font-size: 40px;
     align-items: center;
     text-align: center;
+    margin-bottom: 1rem;
 }
 
 /*texto página #sobre*/
 
 .sobre-parte2 h5{
     display: flex;
-    width: 25rem;
-    margin: 1rem auto;
     font-family: 'Cormorant Garamond', serif;
     color: #ffffff;
-    font-size: 20px;
-    margin-bottom: 5rem;
+    max-width: 26rem;
+    padding-top: -2rem;
+
+    font-size: 25px;
+    align-items: center;
     text-align: justify;
-    margin-left: 2rem;
     
 
 }
 /*container - imagem do rodapé*/
 .sobre-parte2 img{
     display: flex;
-    width: 5.5rem;
+    width: 3rem;
     margin-left: -15rem;
 }
 
@@ -608,17 +612,18 @@ margin:auto;
 /*alexandre foto em circulo na página #sobre*/
 #alexandre-circulo img{
 display: flex;
- width: 3rem;
+ width: 4rem;
  margin:auto;
  justify-content: center;
  align-items: center;
+
 
   }
 
   /*anos de experiencia img - pagina #sobre*/
   #anos-exp img{
 display: flex;
- width: 5rem;
+ width: 6rem;
  margin:auto;
  justify-content: center;
  align-items: center
@@ -629,10 +634,11 @@ display: flex;
         display: flex;
         flex-direction: row;
     align-items: center;
-        width: 70%;
+        max-width: 80%;
      margin:auto;
-    
-        margin-top: -3rem;
+     margin-top: 2rem;
+    margin-bottom: 3rem;
+        margin-top: 1rem;
        
     }
 
@@ -659,7 +665,7 @@ display: flex;
     padding: 20px; /* Adiciona um espaço interno ao formulário */
     max-width: 500px; /* Largura máxima do formulário */
     color: white;
-    margin-top: 30rem;
+    margin-top: 19rem;
     margin-left: rem;
   }
   
@@ -990,7 +996,7 @@ display: flex;
     }
     
     /*foto de alexandre no home*/
-    .banner img {
+    .banner img :nth-child(1){
         display: flex;
         margin-left: -3rem;
         width: 20rem;
@@ -1000,13 +1006,14 @@ display: flex;
     }
     
     /*container da foto de alexandre no home*/
-    .alexandre img {
+ .banner img:nth-child(2) {
         display: flex;
         width: auto;
         height: 40rem;
         align-items: end;
         margin-top: -13.6rem;
         margin-left: 23rem;
+        margin:auto;
     }
     
     /*botao do whatsapp*/
@@ -1277,6 +1284,7 @@ display: flex;
         display: flex;
         flex-direction: column;
         margin-left: 10rem;
+        margin: auto;
        
       }
     
@@ -1285,7 +1293,7 @@ display: flex;
         font-family: 'Cormorant Garamond', serif;
         color: #ffffff;
         padding-top: -2rem;
-        margin-top: 5rem;
+        margin-top: 12rem;
         font-size: 40px;
     }
     
@@ -1293,7 +1301,7 @@ display: flex;
     
     .sobre-parte2 h5{
         width: 40rem;
-        margin: 1rem auto;
+        margin: auto;
         font-family: 'Cormorant Garamond', serif;
         color: #ffffff;
         font-size: 25px;
@@ -1488,9 +1496,805 @@ display: flex;
 
 }
 
+/*MEDIA MENOR -55EM*/
+
+@media (min-width: 30em) and (max-width:44.9em ) {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Define o tamanho de fonte base para rem, utilizando 62.5% da escala (10px) */
+:root {
+    font-size: 62, 5%;
+}
+
+
+
+
+
+/*GERAL - PRIMEIRA PÁGINA*/
+
+/* define a classe .page como um contêiner flexível com direção de coluna */
+.page{
+display: flex;
+flex-direction: column;
+    min-width: 100vh;
+   min-height: 100vh;
+}
+
+
+body {
+    background-color:  #1B3148;
+}
+
+
+    /*página home*/
+    #home {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+       max-width:100%;
+       height: 120%;
+    
+    }
+    
+
+ 
+
+ /*cabeçalho da página - logo de alexandre dentro dele*/
+ header {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+   
+    width: 80%;
+    margin: auto;
+    margin-top:1rem;
+   
+}
+ /*acoplado as duas imagens do logo Alexandre - AS e nome por extenso*/
+        
+ .logo-header {
+    margin: auto;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+height: 5rem;
+}
+
+
+    /*Imagem logo AS do cabeçalho*/
+header img{
+display: flex;
+    margin: auto;
+    justify-items: center;
+    align-items: center;
+   width: 15rem;
+   
+   
+ 
+ }
+    
+ 
+   
+   
+ 
+/*cabeçalho do home - (menu bar, linhas */
+.home-header {
+    margin-top: 3rem;
+    background-image: url(assets/banner.png);
+    background-repeat: initial;
+    background-position: center center;
+    width: 100%;
+}
+ 
+
+/*linha divisória em cima e embaixo no menuBar*/
+.linha {
+    margin: auto;
+align-items: center;
+    border: .1px solid #4E555F;
+    width: 100%;
+}
+
+.menuBar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin: auto;;
+    width: 90%;
+}
+
+.menu{
+    display: flex;
+    margin-top:.5rem;
+}
+
+.menuBar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+ 
+}
+
+.menuBar li {
+    margin: 0 10px;
+}
+
+.menuBar li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+
+
+/*botoes para contato e email*/
+.button-header {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+
+
+}
+
+/*botao de contato*/
+.contact-button {
+    margin-right: 1rem;
+}
+/*imagem botão de contato*/
+.contact-button img {
+    display: flex;
+    max-width: 9rem;
+}
+/*imagem botao de email*/
+.email-button img {
+    display: flex;
+    width: 15rem;
+}
+
+ .banner {
+    display: flex;
+    flex-direction: row;
+    margin: 10px auto;
+    height: 40rem;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+
+}
+
+
+
+.banner .banner-texto{
+    display: flex;
+    flex-direction: column;
+    margin-top: -8rem;
+    margin-left: 3rem;
+    
+}
+
+/*titulo principal do banner*/
+.banner .banner-texto h1 {
+
+    margin-left:-2rem;
+    width: 22rem;
+    align-items: center;
+    font-size: 35px;
+    color: #ffffff;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: bold;
+    text-align: start;
+}
+
+.banner .banner-texto h5 {
+    margin-top: 2rem;
+    width: 15rem;
+    font-size: 20px;
+    color: #D1B06B;
+    font-family: 'Cormorant Garamond', serif;
+    text-align: start;
+    margin-left: -2rem;
+    margin-bottom: 2rem;
+
+}
+
+#button-whatsapp{
+    display: flex;
+    flex-direction: row;
+    margin-top: -rem;
+    margin-left: -2rem;
+    height: 5rem;
+    width: 12em;
+    background-color: #D1B06B;
+    border-radius: 10%;
+    cursor: pointer; 
+
+
+}
+
+#button-whatsapp img {
+    display: flex;
+    width: 2rem;
+    justify-content: center;
+    margin: auto;
+    
+    
+    
+}
+#button-whatsapp a {
+    width: 5rem;
+    text-align: center;
+    text-decoration: none;
+    align-items: center;
+    margin: auto;
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    color: black;
+    margin-left: -1.5rem;
+
+}
+
+#button-whatsapp:hover{
+    background-color:#e0c791;
+    color: white;
+}
+
+
+.banner img:nth-child(2){
+    display: flex;
+height: 70%;
+width: auto;
+margin-left: -7rem;
+margin-top:  12.7rem;
+
+
+}
+
+
+.banner img:nth-child(1){
+
+    display: flex;
+    width: 5rem;
+    margin-left: -2rem;
+    margin-top: -4rem;
+    margin-bottom: 1rem;
+}
+
+
+
+/*SEGUNDA PÁGINA*/
+
+#consultaProcessual{
+    height: 12rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, rgba(209, 176, 107, 1) 2%, rgba(30, 42, 58, 1)70%);
+ }
+ #consultaProcessual h1{
+    color: white;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 15px;
+   margin-bottom: 1.2rem;
+text-align: center;}
+
+
+    /*botoes para consulta e-SAJ e Consulta Publica*/
+ .botaoConsulta{
+   
+    width: 12rem;
+    height: 3rem;
+   margin-right: 1rem;
+   border-radius: 5px;
+   color: white;
+   background: #1F2732;
+cursor: pointer;
+ }
+
+ .botaoConsulta:hover{
+    background: #D1B06B;
+ }
+
+
+ /*terceira página*/
+
+ #areas{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    min-width: 100%;
+   height: 100%;
+    background:rgb(30, 42, 58) ;
+   
+   
+    
+ }
+
+    .areas-atuação {
+        display: flex;
+        flex-direction: column;
+    }
+ 
+.caixa {
+    display: flex;
+    flex-direction: column;
+  
+    width: 350px;
+    height:350px;
+    padding: 58px, 49px, 58px, 50px;
+  margin-bottom: 40px;
+ 
+  margin-top: 10px;
+  border-radius: 10px;
+background-color:#2E3947; 
+align-items: center;
+}
+
+.caixa:hover  {
+    transform: scale(1.1);
+}
+
+.caixa h1{
+    color: white;
+   
+    font-family: 'Outfit', sans-serif;
+    font-weight: regular;
+}
+
+
+.caixa h5{
+    color: white;
+    margin-top: 10px;
+    padding: 20px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: regular;
+    font-size: 14px;
+    text-align: justify;
+
+}
+
+
+.contents {
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto; /* Duas colunas com tamanhos iguais */
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.titulo-atuacao{
+    display: flex;
+    flex-direction: column;
+   padding-top: 80px;
+    margin: auto;
+    margin-bottom: 70px;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    width: 8rem;
+    gap: -30px;
+    
+
+}
+
+
+
+.titulo-atuacao1 img{ 
+    display: flex;
+    width: 70px;
+    height: 50px;
+    margin-left:20rem;
+}
+
+.titulo-atuacao1{ 
+    
+    margin-right: 20rem;
+}
+
+.titulo-atuacao1 h1{
+    display: flex;
+    font-family: 'Cormorant Garamond', serif;
+font-size: 35px;
+font-weight: 700;
+line-height: 52px;
+margin: auto;
+margin-left: 20rem;
+
+width:300px;
+
+
+color: white;
+
+
+
+}
+
+.titulo-atuacao2 h2{
+    margin-top: -3rem;
+font-family: 'Outfit', sans-serif;
+font-size: 13px;
+font-weight: 600;
+line-height: 28px;
+letter-spacing: 0em;
+text-align: left;
+color: white;
+text-align: justify;
+width: 25rem;
+    
+}
+
+.titulo-atuacao2 h2 span{
+    color: #D1B06B;
+}
+
+.divisor-atuacao{
+    display: flex;
+  margin-left: -11rem;
+  margin-right: rem;
+    align-items: center;
+}
+
+
+.titulo-caixa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.titulo-caixa img{
+    display: flex;
+    margin-left: 10px;
+    
+    height: 30px;
+    width: 30px;
+ margin-top: 20px;
+
+}
+
+.contents {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.linha1 {
+    margin-top: 10px;
+    border: .1px solid #4E555F;
+    width: 18rem;
+}
+
+/*QUARTA PÁGINA*/
+
+
+#sobre{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgb(30, 42, 58)20%, rgb(36, 66, 98)80% );
+}
+
+/*imagens do carossel - página #sobre*/
+.slides img {
+   margin:auto;
+    display: flex;
+    border-radius: 1rem; 
+    width: 100%;
+    align-items: center;
+    height: 50%;
+    
+
+}
+/*carrossel imagem página #sobre*/
+.slides{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+margin:auto;
+margin-top: 1rem;
+    width: 80%;
+    margin-bottom: 3rem;
+
+}
+/*container da pagina #sobre*/
+.pagesobre {
+    display: flex;
+    flex-direction: column;
+    
+    height:  100%;
+  margin: auto;
+  margin-top: 2rem;
+ align-items: center;
+
+  width: 100%;
+  }
+
+ 
+  
+/*primeira parte da página sobre : imagens do carrossel */
+  .sobre-parte1{
+    display: flex;
+  
+    width: 100%;
+    align-items: center;
+    
+  }
+  
+  /*parte dois da pagina #sobre, titulo, subtitulo, rodapé */
+  .sobre-parte2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -1rem;
+   
+    width: 100%;
+    
+ 
+   
+  }
+
+  /*titulo da página sobre "nosso escritorio" */
+.sobre-parte2 h1 {
+    display: flex;
+    font-family: 'Cormorant Garamond', serif;
+    color: #ffffff;
+    padding-top: -2rem;
+    margin-top: 2rem;
+    font-size: 40px;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/*texto página #sobre*/
+
+.sobre-parte2 h5{
+    display: flex;
+    font-family: 'Cormorant Garamond', serif;
+    color: #ffffff;
+    max-width: 26rem;
+    padding-top: -2rem;
+
+    font-size: 25px;
+    align-items: center;
+    text-align: justify;
+    
+
+}
+/*container - imagem do rodapé*/
+.sobre-parte2 img{
+    display: flex;
+    width: 3rem;
+    margin-left: -15rem;
+}
+
+/*container da imagem de alexandre #sobre*/
+#alexandre-circulo {
+    display: flex;
+    margin: auto;
+}
+
+#alexandre-circulo h3{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Cormorant Garamond', serif;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    width: 10rem;
+
+}
+
+/*alexandre foto em circulo na página #sobre*/
+#alexandre-circulo img{
+display: flex;
+ width: 4rem;
+ margin:auto;
+ justify-content: center;
+ align-items: center;
+
+
+  }
+
+  /*anos de experiencia img - pagina #sobre*/
+  #anos-exp img{
+display: flex;
+ width: 6rem;
+ margin:auto;
+ justify-content: center;
+ align-items: center
+
+  }
+  /*rodapé da página #sobre*/
+    .rodape-sobre{
+        display: flex;
+        flex-direction: row;
+    align-items: center;
+        max-width: 80%;
+     margin:auto;
+     margin-top: 2rem;
+    margin-bottom: 3rem;
+        margin-top: 1rem;
+       
+    }
+
+
+
+    /*QUINTA PÁGINA*/
+
+    
+    #contato {
+        display: flex;
+        justify-content: center; /* Centraliza horizontalmente */
+        align-items: center; /* Centraliza verticalmente */
+        background-image: url('assets/escritorio.png');
+        background-repeat: no-repeat;
+        background-position:35%;
+        background-size:cover; /* Ajusta o tamanho da imagem para cobrir toda a área */
+        height: 100vh;
+      }
+
+      
+ /* Formulário */
+.formulario {
+    background-color: rgba(31, 39, 50, 0.8); /* rgba para dar um efeito de transparência */
+    width: 100%;
+    padding: 20px; /* Adiciona um espaço interno ao formulário */
+    max-width: 500px; /* Largura máxima do formulário */
+    color: white;
+    margin-top: 19rem;
+    margin-left: rem;
+  }
+  
+  .formulario h1 {
+    text-align: center; 
+    font-size: 2.2rem;
+  }
+  
+  .formulario .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .formulario .form-group label {
+    display: block;
+  }
+  
+  .formulario input[type="text"],
+  .formulario input[type="email"],
+  .formulario textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .formulario button {
+    width: 100%;
+    padding: 10px;
+    background-color: #CCAA60;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+
+
+  }
+  
+       
+  .formulario button:hover{
+    background: white;
+    color: black;
+  }
+
+
+
+
+
+  /*RODAPÉ*/
+
+  footer {
+    background: linear-gradient(to top, rgb(30, 42, 58)20%, rgb(36, 66, 98)80% );
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .logo img {
+    width: 20rem; /* Ajuste o tamanho conforme necessário */
+    margin-bottom: -8rem;
+    margin-top: -5rem ;
+  }
+  
+  .links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .links li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  .links a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  .links li a:hover {
+    text-decoration: none;
+    color: #CCAA60;
+  }
+  
+  .social img {
+    width: 10px; /* Ajuste o tamanho conforme necessário */
+    margin-top: 10px;
+    color: white;
+    display: flex;
+    align-items: end;
+  }
+  
+  .social img:hover {
+    opacity: 0.7;
+  }
+  
+  /* Estilos para o texto de copyright */
+  .copyright {
+    margin-top: 20px;
+  }
+  
+  .copyright p {
+    font-size: 14px;
+    color: #666;
+    display: inline; /* Faz com que o texto e a imagem fiquem na mesma linha */
+  }
+  
+  .copyright img {
+    width: 20px; /* Ajuste o tamanho conforme necessário */
+    vertical-align: middle; /* Alinha verticalmente com o texto */
+    margin-left: 5px; /* Adiciona um pequeno espaço entre o texto e a imagem */
+  }
+
+  .address p{
+    margin-top: 2rem;
+    color: white;
+
+  }
+  }
+
 
 /*@MEDIA +50REM E -135REM*/
-@media (min-width: 55em) and (max-width:85em ) {
+@media (min-width: 45em) and (max-width:85em ) {
 
     /* Define estilos de reset para garantir consistência entre os navegadores */
     * {
@@ -1578,12 +2382,14 @@ display: flex;
     /*Menu : Home | area de atuacao | sobre | contato */
     .menu {
       width: 90%;
+      display: flex;
+      align-items: center;
     }
     
     /*acoplado do MENU e dos botoes: contato e email */
     .menuBar {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         text-decoration: none;
@@ -1591,7 +2397,10 @@ display: flex;
     
     /*estilização da lista do menu bar*/
     .menuBar ul {
-    
+    display: flex;
+    margin: auto;
+    font-size: 20px;
+    margin-bottom: 1rem;
         list-style: none;
         padding: 0;
     
@@ -1674,64 +2483,62 @@ display: flex;
     
     .banner {
         display: flex;
-        flex-direction: row;
         margin: 10px auto;
         height: 40rem;
         width: 100%;
-        align-items: center;
+        
         text-align: center;
     
     }
+
+    .banner img:nth-child(1){ 
+
+        display: flex;
+        margin-top: 1rem;
+        margin-bottom: -10rem;
+    }
+ 
     
     /*titulo principal do banner*/
     .banner .banner-texto h1 {
-        width: 35rem;
-    
-        font-size: 55px;
+        display: flex;
+        width: 28rem;
+
+        font-size: 45px;
         color: #ffffff;
         font-family: 'Cormorant Garamond', serif;
         font-weight: bold;
         text-align: justify;
+        margin-top: 10rem;
     
     
     }
     
     /*Subtitulo banner */
     
-    .banner h5 {
-        margin: 1rem 0 0 -4rem;
+    .banner .banner-texto h5 {
+        display: flex;
+        width: 30rem;
+        margin-top: 1rem;
+     
         color: #ccaa60;
-        font-size: 22px;
+        font-size: 20px;
         font-weight: 400;
-        font-family: 'Outfit', sans-serif;
-        width: 35rem;
-    
-    }
+        font-family: 'Outfit', sans-serif;}
     
     /*foto de alexandre no home*/
-    .banner img {
-        display: flex;
-        align-items: flex-start;
-    }
+  
     
-    /*container da foto de alexandre no home*/
-    .alexandre  {
-        display: flex;
-       justify-content: center;
-       
-       
-       
     
-    }
-
-
-    .alexandre img {
+   
+   .banner img:nth-child(2){
         display: flex;
         width: auto;
-        height: 40rem;
-        align-items: end;
-        margin-top: -13.6rem;
-        margin-left: 6rem;
+        height: 30rem;
+        align-items: flex-end;
+    margin-left: 10rem;
+        margin-top: 30rem;
+        margin:auto;
     }
     
     /*botao do whatsapp*/
@@ -1761,9 +2568,11 @@ display: flex;
 
 #button-whatsapp img {
     display: flex;
+    flex-direction: row;
     width: 2rem;
     justify-content: center;
-    margin: auto;
+
+  
     
     
     
@@ -1805,7 +2614,7 @@ display: flex;
         flex-direction: column;
       
         max-width: 30%;
-        height:20rem;
+        height:27rem;
         padding: 38px, 29px, 38px, 20px;
       margin-bottom: 40px;
      
@@ -1894,7 +2703,7 @@ display: flex;
     }
     
     .titulo-atuacao2 h2{
-    margin-left: 180px;
+    margin-left: 160px;
     font-family: 'Outfit', sans-serif;
     font-size: 15px;
     font-weight: 600;
@@ -1903,8 +2712,9 @@ display: flex;
     text-align: left;
     color: white;
     text-align: justify;
-    width: 16rem;
+    max-width: 16rem;
     height: auto;;
+    margin: auto;
         
     }
     
@@ -1946,90 +2756,109 @@ display: flex;
         border: .1px solid #4E555F;
         width: 70%;}
 
-    
+ 
 #sobre{
     display: flex;
+    margin: auto;
+    align-items: center;
     width: 100%;
-    height: 90vh;
+    height: 120%;
     background: linear-gradient(to top, rgb(30, 42, 58)20%, rgb(36, 66, 98)80% );
 }
 
 /*imagens do carossel - página #sobre*/
 .slides img {
-    display: none;
+   margin:auto;
+    display: flex;
     border-radius: 1rem; 
-    width: auto;
-    height: 25rem;
+    width: 80%;
     align-items: center;
-    justify-content: center;
+    height: auto;
+    
 
 }
 /*carrossel imagem página #sobre*/
 .slides{
     display: flex;
-    margin:auto;
-margin-top: 2rem;
+    flex-direction: column;
     align-items: center;
-   
-    
+
+margin:auto;
+margin-top: 1rem;
+    width: 60%;
+    margin-bottom: 1rem;
 
 }
-
 /*container da pagina #sobre*/
 .pagesobre {
     display: flex;
+    flex-direction: column;
+    
+    height:  100%;
+  margin: auto;
+  margin-top: 2rem;
+ align-items: center;
 
-  width:100%;
-  align-items: center;
-
+  width: 100%;
   }
+
+ 
   
 /*primeira parte da página sobre : imagens do carrossel */
   .sobre-parte1{
     display: flex;
   
+    width: 100%;
     align-items: center;
-    margin-bottom: -40rem;
+    
   }
   
   /*parte dois da pagina #sobre, titulo, subtitulo, rodapé */
   .sobre-parte2 {
     display: flex;
-    margin: auto;
+    flex-direction: column;
+    align-items: center;
+  margin: auto;
     width: 100%;
-    margin-top: -rem;
-   
-
-   
-  
-   
+    
+ 
    
   }
 
   /*titulo da página sobre "nosso escritorio" */
 .sobre-parte2 h1 {
+    display: flex;
     font-family: 'Cormorant Garamond', serif;
     color: #ffffff;
     padding-top: -2rem;
-    font-size: 40px;
-    margin-top: -1rem;
+    margin-top: 1rem;
+    font-size: 35px;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1rem;
 }
 
 /*texto página #sobre*/
 
 .sobre-parte2 h5{
-    width: 30rem;
-    margin: 1rem auto;
+    display: flex;
     font-family: 'Cormorant Garamond', serif;
+    width: 27rem;
     color: #ffffff;
+width: auto;
+    padding-top: -2rem;
+
     font-size: 25px;
-    margin-bottom: 5rem;
+    align-items: center;
     text-align: justify;
+    
 
 }
 /*container - imagem do rodapé*/
 .sobre-parte2 img{
-    width: 5.5rem;
+    display: flex;
+    width: 3rem;
+    margin-left: -15rem;
 }
 
 /*container da imagem de alexandre #sobre*/
@@ -2045,7 +2874,7 @@ margin-top: 2rem;
     align-items: center;
     font-family: 'Cormorant Garamond', serif;
     color: #ffffff;
-    font-size: 22px;
+    font-size: 15px;
     font-weight: 700;
     width: 10rem;
 
@@ -2054,7 +2883,8 @@ margin-top: 2rem;
 /*alexandre foto em circulo na página #sobre*/
 #alexandre-circulo img{
 display: flex;
- width: 4rem;
+ width: 3rem;
+ margin:auto;
  justify-content: center;
  align-items: center;
 
@@ -2064,23 +2894,22 @@ display: flex;
   /*anos de experiencia img - pagina #sobre*/
   #anos-exp img{
 display: flex;
- width: 8rem;
+ width: 5rem;
+ margin:auto;
  justify-content: center;
- align-items: center;
-
-
+ align-items: center
 
   }
   /*rodapé da página #sobre*/
     .rodape-sobre{
         display: flex;
-        align-items: center;
-      
         flex-direction: row;
-        width: 40%;
-       
-        
-       
+    align-items: center;
+        max-width: 80%;
+     margin:auto;
+     margin-top: 2rem;
+    margin-bottom: 3rem;
+        margin-top: 1rem;
        
     }
     
