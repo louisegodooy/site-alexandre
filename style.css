@@ -383,14 +383,12 @@ align-items: center;
 .titulo-atuacao{
     display: flex;
     flex-direction: column;
-   padding-top: 80px;
     margin: auto;
-    margin-bottom: 70px;
     align-items: center;
     justify-content: center;
     text-align: justify;
-    width: 8rem;
-    gap: -30px;
+
+   
     
 
 }
