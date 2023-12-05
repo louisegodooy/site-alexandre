@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /**variaveis*/
+    --ff: 'Cormorant Garamond', serif;;
+    --ff1:  'Outfit', sans-serif;
 }
 
 
@@ -202,7 +205,7 @@ align-items: center;
     align-items: center;
     font-size: 35px;
     color: #ffffff;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: var(--ff);
     font-weight: bold;
     text-align: start;
 }
@@ -212,7 +215,7 @@ align-items: center;
     width: 15rem;
     font-size: 20px;
     color: #D1B06B;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: var(--ff);
     text-align: start;
     margin-left: -2rem;
     margin-bottom: 1rem;
@@ -248,7 +251,7 @@ align-items: center;
     text-decoration: none;
     align-items: center;
     margin: auto;
-    font-family: 'Outfit', sans-serif;
+    font-family:  var(--ff);
     font-size: 15px;
     color: black;
     margin-left: -1.5rem;
@@ -286,7 +289,7 @@ margin: auto;
  }
  #consultaProcessual h1{
     color: white;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: var(--ff);
     font-size: 15px;
    margin-bottom: 1.2rem;
 text-align: center;}
@@ -350,7 +353,7 @@ align-items: center;
 .caixa h1{
     color: white;
    
-    font-family: 'Outfit', sans-serif;
+    font-family: var(--ff);
     font-weight: regular;
 }
 
@@ -359,7 +362,7 @@ align-items: center;
     color: white;
     margin-top: 10px;
     padding: 20px;
-    font-family: 'Outfit', sans-serif;
+    font-family: var(--ff);
     font-weight: regular;
     font-size: 14px;
     text-align: justify;
@@ -396,9 +399,10 @@ align-items: center;
 
 .titulo-atuacao1 img{ 
     display: flex;
-    width: 70px;
+    width: 3rem;
     height: 50px;
     margin-left:20rem;
+    margin-top: -1rem;
 }
 
 .titulo-atuacao1{ 
@@ -408,7 +412,7 @@ align-items: center;
 
 .titulo-atuacao1 h1{
     display: flex;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: var(--ff);
 font-size: 35px;
 font-weight: 700;
 line-height: 52px;
@@ -426,15 +430,16 @@ color: white;
 
 .titulo-atuacao2 h2{
     margin-top: -3rem;
-font-family: 'Outfit', sans-serif;
+font-family:var(--ff);
 font-size: 13px;
 font-weight: 600;
 line-height: 28px;
+margin-top: 5px;
 letter-spacing: 0em;
 text-align: left;
 color: white;
 text-align: justify;
-width: 25rem;
+width: 20rem;
     
 }
 
@@ -558,7 +563,7 @@ margin-top: 1rem;
   /*titulo da página sobre "nosso escritorio" */
 .sobre-parte2 h1 {
     display: flex;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: var(--ff1);
     color: #ffffff;
     padding-top: -2rem;
     margin-top: 2rem;
@@ -572,12 +577,11 @@ margin-top: 1rem;
 
 .sobre-parte2 h5{
     display: flex;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: var(--ff1);
     color: #ffffff;
     max-width: 26rem;
     padding-top: -2rem;
-
-    font-size: 25px;
+    font-size: 20px;
     align-items: center;
     text-align: justify;
     
@@ -601,7 +605,7 @@ margin-top: 1rem;
     margin: auto;
     justify-content: center;
     align-items: center;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: var(--ff1);
     color: #ffffff;
     font-size: 15px;
     font-weight: 700;
@@ -950,7 +954,7 @@ display: flex;
         text-align: center;
         font-size: 3.5rem;
         color: white;
-        font-family: 'Cormorant Garamond', serif;
+        font-family: var(--ff1);
     }
     
     
@@ -970,11 +974,11 @@ display: flex;
     
     /*titulo principal do banner*/
     .banner .banner-texto h1 {
-        width: 35rem;
+        width: 40rem;
     
         font-size: 55px;
         color: #ffffff;
-        font-family: 'Cormorant Garamond', serif;
+        font-family: var(--ff1);
         font-weight: bold;
         text-align: justify;
         margin-left: 2rem;
@@ -991,7 +995,7 @@ display: flex;
         color: #ccaa60;
         font-size: 25px;
         font-weight: 400;
-        font-family: 'Outfit', sans-serif;
+        font-family:var(--ff);
     
     }
     
@@ -1009,9 +1013,8 @@ display: flex;
  .banner img:nth-child(2) {
         display: flex;
         width: auto;
-        height: 40rem;
+        height: 40.6rem;
         align-items: end;
-        margin-top: -13.6rem;
         margin-left: 23rem;
         margin:auto;
     }
@@ -1039,7 +1042,7 @@ display: flex;
         text-align: center;
         text-decoration: none;
         margin: auto;
-        font-family: 'Outfit', sans-serif;
+        font-family:var(--ff);
         font-size: 18px;
         color: black;
         width: 11rem;
@@ -1066,7 +1069,7 @@ display: flex;
      }
      #consultaProcessual h1{
         color: white;
-        font-family: 'Cormorant Garamond', serif;
+        font-family: var(--ff1);
         font-size: 18px;
        margin-bottom: 1.2rem;
      
@@ -1126,7 +1129,7 @@ display: flex;
     .caixa h1{
         color: white;
        
-        font-family: 'Outfit', sans-serif;
+        font-family:var(--ff);
         font-weight: regular;
     }
     
@@ -1135,7 +1138,7 @@ display: flex;
         color: white;
         margin-top: 10px;
         padding: 20px;
-        font-family: 'Outfit', sans-serif;
+        font-family:var(--ff);
         font-weight: regular;
         font-size: 14px;
         text-align: justify;
@@ -1181,7 +1184,7 @@ display: flex;
     }
     
     .titulo-atuacao1 h1{
-        font-family: 'Cormorant Garamond', serif;
+        font-family: var(--ff1);
     font-size: 45px;
     font-weight: 700;
     line-height: 52px;
@@ -1198,7 +1201,7 @@ display: flex;
     
     .titulo-atuacao2 h2{
     margin-left: 180px;
-    font-family: 'Outfit', sans-serif;
+    font-family:var(--ff);
     font-size: 15px;
     font-weight: 600;
     line-height: 28px;
@@ -1290,7 +1293,7 @@ display: flex;
     
       /*titulo da página sobre "nosso escritorio" */
     .sobre-parte2 h1 {
-        font-family: 'Cormorant Garamond', serif;
+        font-family: var(--ff1);
         color: #ffffff;
         padding-top: -2rem;
         margin-top: 12rem;
@@ -1302,7 +1305,7 @@ display: flex;
     .sobre-parte2 h5{
         width: 40rem;
         margin: auto;
-        font-family: 'Cormorant Garamond', serif;
+        font-family: var(--ff1);
         color: #ffffff;
         font-size: 25px;
         margin-bottom: 5rem;
@@ -1325,9 +1328,9 @@ display: flex;
         margin: auto;
         justify-content: center;
         align-items: center;
-        font-family: 'Cormorant Garamond', serif;
+        font-family: var(--ff1);
         color: #ffffff;
-        font-size: 22px;
+        font-size: 20px;
         font-weight: 700;
         width: 10rem;
     
@@ -1498,7 +1501,7 @@ display: flex;
 
 /*MEDIA MENOR -55EM*/
 
-@media (min-width: 30em) and (max-width:44.9em ) {
+@media (min-width: 30em) and (max-width:59.9em ) {
 * {
     margin: 0;
     padding: 0;
@@ -1696,7 +1699,7 @@ align-items: center;
     align-items: center;
     font-size: 35px;
     color: #ffffff;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: var(--ff1);
     font-weight: bold;
     text-align: start;
 }
@@ -1706,7 +1709,7 @@ align-items: center;
     width: 15rem;
     font-size: 20px;
     color: #D1B06B;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: var(--ff1);
     text-align: start;
     margin-left: -2rem;
     margin-bottom: 2rem;
@@ -1719,7 +1722,7 @@ align-items: center;
     margin-top: -rem;
     margin-left: -2rem;
     height: 5rem;
-    width: 12em;
+    width: 13.5em;
     background-color: #D1B06B;
     border-radius: 10%;
     cursor: pointer; 
@@ -1742,7 +1745,7 @@ align-items: center;
     text-decoration: none;
     align-items: center;
     margin: auto;
-    font-family: 'Outfit', sans-serif;
+    font-family:var(--ff);
     font-size: 15px;
     color: black;
     margin-left: -1.5rem;
@@ -1791,7 +1794,7 @@ margin-top:  12.7rem;
  }
  #consultaProcessual h1{
     color: white;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: var(--ff1);
     font-size: 15px;
    margin-bottom: 1.2rem;
 text-align: center;}
@@ -1855,7 +1858,7 @@ align-items: center;
 .caixa h1{
     color: white;
    
-    font-family: 'Outfit', sans-serif;
+    font-family:var(--ff);
     font-weight: regular;
 }
 
@@ -1864,7 +1867,7 @@ align-items: center;
     color: white;
     margin-top: 10px;
     padding: 20px;
-    font-family: 'Outfit', sans-serif;
+    font-family:var(--ff);
     font-weight: regular;
     font-size: 14px;
     text-align: justify;
@@ -1901,9 +1904,10 @@ align-items: center;
 
 .titulo-atuacao1 img{ 
     display: flex;
-    width: 70px;
+    width: 3rem;
     height: 50px;
     margin-left:20rem;
+
 }
 
 .titulo-atuacao1{ 
@@ -1913,7 +1917,7 @@ align-items: center;
 
 .titulo-atuacao1 h1{
     display: flex;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: var(--ff1);
 font-size: 35px;
 font-weight: 700;
 line-height: 52px;
@@ -1930,8 +1934,8 @@ color: white;
 }
 
 .titulo-atuacao2 h2{
-    margin-top: -3rem;
-font-family: 'Outfit', sans-serif;
+    margin-top: 1rem;
+font-family:var(--ff);
 font-size: 13px;
 font-weight: 600;
 line-height: 28px;
@@ -1939,7 +1943,7 @@ letter-spacing: 0em;
 text-align: left;
 color: white;
 text-align: justify;
-width: 25rem;
+width: 20rem;
     
 }
 
@@ -1947,12 +1951,7 @@ width: 25rem;
     color: #D1B06B;
 }
 
-.divisor-atuacao{
-    display: flex;
-  margin-left: -11rem;
-  margin-right: rem;
-    align-items: center;
-}
+
 
 
 .titulo-caixa {
@@ -1982,11 +1981,7 @@ width: 25rem;
     justify-content: center;
 }
 
-.linha1 {
-    margin-top: 10px;
-    border: .1px solid #4E555F;
-    width: 18rem;
-}
+
 
 /*QUARTA PÁGINA*/
 
@@ -2063,7 +2058,7 @@ margin-top: 1rem;
   /*titulo da página sobre "nosso escritorio" */
 .sobre-parte2 h1 {
     display: flex;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: var(--ff1);
     color: #ffffff;
     padding-top: -2rem;
     margin-top: 2rem;
@@ -2077,12 +2072,12 @@ margin-top: 1rem;
 
 .sobre-parte2 h5{
     display: flex;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: var(--ff1);
     color: #ffffff;
     max-width: 26rem;
-    padding-top: -2rem;
+  margin-top: 1rem;
 
-    font-size: 25px;
+    font-size: 20px;
     align-items: center;
     text-align: justify;
     
@@ -2106,7 +2101,7 @@ margin-top: 1rem;
     margin: auto;
     justify-content: center;
     align-items: center;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: var(--ff1);
     color: #ffffff;
     font-size: 15px;
     font-weight: 700;
@@ -2294,7 +2289,7 @@ display: flex;
 
 
 /*@MEDIA +50REM E -135REM*/
-@media (min-width: 45em) and (max-width:85em ) {
+@media (min-width: 60em) and (max-width:85em ) {
 
     /* Define estilos de reset para garantir consistência entre os navegadores */
     * {
@@ -2475,7 +2470,7 @@ display: flex;
         text-align: center;
         font-size: 3.5rem;
         color: white;
-        font-family: 'Cormorant Garamond', serif;
+        font-family: var(--ff1);
     }
     
     
@@ -2483,7 +2478,7 @@ display: flex;
     
     .banner {
         display: flex;
-        margin: 10px auto;
+        margin: auto;
         height: 40rem;
         width: 100%;
         
@@ -2502,11 +2497,11 @@ display: flex;
     /*titulo principal do banner*/
     .banner .banner-texto h1 {
         display: flex;
-        width: 28rem;
+        width: 25rem;
 
-        font-size: 45px;
+        font-size: 35px;
         color: #ffffff;
-        font-family: 'Cormorant Garamond', serif;
+        font-family: var(--ff1);
         font-weight: bold;
         text-align: justify;
         margin-top: 10rem;
@@ -2524,7 +2519,7 @@ display: flex;
         color: #ccaa60;
         font-size: 20px;
         font-weight: 400;
-        font-family: 'Outfit', sans-serif;}
+        font-family:var(--ff);}
     
     /*foto de alexandre no home*/
   
@@ -2534,10 +2529,10 @@ display: flex;
    .banner img:nth-child(2){
         display: flex;
         width: auto;
-        height: 30rem;
+        height: 40rem;
         align-items: flex-end;
-    margin-left: 10rem;
-        margin-top: 30rem;
+    margin-left: 5rem;
+      
         margin:auto;
     }
     
@@ -2583,7 +2578,7 @@ display: flex;
     text-decoration: none;
     align-items: center;
     margin: auto;
-    font-family: 'Outfit', sans-serif;
+    font-family:var(--ff);
     font-size: 15px;
     color: black;
     margin-left: -1.5rem;
@@ -2631,7 +2626,7 @@ display: flex;
     .caixa h1{
         color: white;
        font-size: 20px;
-        font-family: 'Outfit', sans-serif;
+        font-family:var(--ff);
         font-weight: regular;
     }
     
@@ -2640,7 +2635,7 @@ display: flex;
         color: white;
         margin-top: 10px;
         padding: 16px;
-        font-family: 'Outfit', sans-serif;
+        font-family:var(--ff);
         font-weight: regular;
         font-size: 14px;
         text-align: justify;
@@ -2668,7 +2663,7 @@ display: flex;
         align-items: center;
         justify-content: center;
         text-align: justify;
-        width: 10rem;
+        width: 80%;
         gap: -30px;
         
     
@@ -2677,9 +2672,12 @@ display: flex;
     
     
     .titulo-atuacao1 img{ 
+        display: flex;
         width: 70px;
         height: 50px;
-        margin-left: 20px;
+        margin-top: 5px;
+        margin-left: -2rem;
+        
     }
     
     .titulo-atuacao1{ 
@@ -2687,13 +2685,14 @@ display: flex;
     }
     
     .titulo-atuacao1 h1{
-        font-family: 'Cormorant Garamond', serif;
-    font-size: 45px;
+        font-family: var(--ff1);
+    font-size: 38px;
     font-weight: 700;
     line-height: 52px;
     margin: auto;
-   
-    width: 400px;
+   margin-left: rem;
+    width: 20rem;
+    margin-left: -2rem;
     
     
     color: white;
@@ -2703,8 +2702,10 @@ display: flex;
     }
     
     .titulo-atuacao2 h2{
-    margin-left: 160px;
-    font-family: 'Outfit', sans-serif;
+       
+    padding-left: -40rem;
+    margin-left: -5rem;
+    font-family:var(--ff);
     font-size: 15px;
     font-weight: 600;
     line-height: 28px;
@@ -2712,9 +2713,9 @@ display: flex;
     text-align: left;
     color: white;
     text-align: justify;
-    max-width: 16rem;
+width: 20rem;
     height: auto;;
-    margin: auto;
+   
         
     }
     
@@ -2828,7 +2829,7 @@ margin-top: 1rem;
   /*titulo da página sobre "nosso escritorio" */
 .sobre-parte2 h1 {
     display: flex;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: var(--ff1);
     color: #ffffff;
     padding-top: -2rem;
     margin-top: 1rem;
@@ -2842,7 +2843,7 @@ margin-top: 1rem;
 
 .sobre-parte2 h5{
     display: flex;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: var(--ff1);
     width: 27rem;
     color: #ffffff;
 width: auto;
@@ -2872,7 +2873,7 @@ width: auto;
     margin: auto;
     justify-content: center;
     align-items: center;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: var(--ff1);
     color: #ffffff;
     font-size: 15px;
     font-weight: 700;
