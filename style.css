@@ -387,7 +387,7 @@ align-items: center;
     align-items: center;
     justify-content: center;
     text-align: justify;
-
+    width: 8rem;
    
     
 
@@ -1904,7 +1904,7 @@ align-items: center;
     display: flex;
     width: 3rem;
     height: 50px;
-    margin-left:20rem;
+    margin-left:28rem;
 
 }
 
@@ -1920,9 +1920,10 @@ font-size: 35px;
 font-weight: 700;
 line-height: 52px;
 margin: auto;
-margin-left: 20rem;
+margin-left: 28rem;
 
-width:300px;
+width: 400px;
+align-items: center;
 
 
 color: white;
