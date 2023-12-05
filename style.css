@@ -1172,9 +1172,11 @@ display: flex;
     
     
     .titulo-atuacao1 img{ 
+        display: flex;
         width: 70px;
         height: 50px;
-        margin-left: 40px;
+        margin-top:1rem;
+        margin-left: .2rem
     }
     
     .titulo-atuacao1{ 
@@ -1904,7 +1906,8 @@ align-items: center;
     display: flex;
     width: 3rem;
     height: 50px;
-    margin-left:28rem;
+    margin-left:27rem;
+    margin-bottom: .5rem;
 
 }
 
@@ -1920,7 +1923,7 @@ font-size: 35px;
 font-weight: 700;
 line-height: 52px;
 margin: auto;
-margin-left: 28rem;
+margin-left: 27rem;
 
 width: 400px;
 align-items: center;
@@ -2674,7 +2677,7 @@ display: flex;
         display: flex;
         width: 70px;
         height: 50px;
-        margin-top: 5px;
+margin-top: .2rem;
         margin-left: -2rem;
         
     }
