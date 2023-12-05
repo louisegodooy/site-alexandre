@@ -393,6 +393,10 @@ align-items: center;
 
 }
 
+.divisor-atuacao img{
+    display: none;
+}
+
 
 
 .titulo-atuacao1 img{ 
@@ -1185,7 +1189,9 @@ display: flex;
     .titulo-atuacao1{ 
         margin-right: 200px;
     }
-    
+    .divisor-atuacao img{
+        display: flex;
+    }
     .titulo-atuacao1 h1{
         font-family: var(--ff1);
     font-size: 45px;
@@ -1842,6 +1848,10 @@ cursor: pointer;
     .areas-atuação {
         display: flex;
         flex-direction: column;
+    }
+.divisor-atuacao img{
+    display: none;
+    
     }
  
 .caixa {
@@ -2717,8 +2727,8 @@ margin-top: .2rem;
     
     .titulo-atuacao2 h2{
        
-    padding-left: -40rem;
-    margin-left: -5rem;
+    padding-left: -20rem;
+    margin-left: 5rem;
     font-family:var(--ff);
     font-size: 15px;
     font-weight: 600;
