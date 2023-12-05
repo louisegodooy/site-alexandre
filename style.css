@@ -726,11 +726,14 @@ display: flex;
     text-align: center;
   }
   
-  .logo img {
-    width: 20rem; /* Ajuste o tamanho conforme necessário */
-    margin-bottom: -8rem;
-    margin-top: -5rem ;
-  }
+
+    .logo img {
+        display: flex;
+        width: 20rem;
+      margin-top: 1rem;
+      padding-bottom: 2rem;  
+    margin: auto;    }
+      
   
   .links ul {
     list-style: none;
@@ -1307,14 +1310,16 @@ display: flex;
         margin: auto;
         font-family: var(--ff1);
         color: #ffffff;
-        font-size: 25px;
+        font-size: 15px;
         margin-bottom: 5rem;
         text-align: justify;
+        font-weight: 200;
     
     }
     /*container - imagem do rodapé*/
     .sobre-parte2 img{
-        width: 5.5rem;
+        width: 3.5rem;
+        margin-bottom: 2rem;
     }
     
     /*container da imagem de alexandre #sobre*/
@@ -1438,13 +1443,16 @@ display: flex;
         background: linear-gradient(to top, rgb(30, 42, 58)20%, rgb(36, 66, 98)80% );
         padding: 20px 0;
         text-align: center;
+        height: 100%;
       }
       
       .logo img {
-        width: 20rem; /* Ajuste o tamanho conforme necessário */
-        margin-bottom: -8rem;
-        margin-top: -5rem ;
-      }
+        display: flex;
+        width: 20rem;
+      margin-top: 1rem;
+      padding-bottom: 2rem;  
+    margin: auto;    }
+      
       
       .links ul {
         list-style: none;
@@ -2227,10 +2235,14 @@ display: flex;
     text-align: center;
   }
   
-  .logo img {
-    width: 20rem; /* Ajuste o tamanho conforme necessário */
-    margin-bottom: -8rem;
-    margin-top: -5rem ;
+ 
+    .logo img {
+        display: flex;
+        width: 20rem;
+      margin-top: 1rem;
+      padding-bottom: 2rem;  
+    margin: auto;    }
+      
   }
   
   .links ul {
@@ -2287,7 +2299,7 @@ display: flex;
     color: white;
 
   }
-  }
+  
 
 
 /*@MEDIA +50REM E -135REM*/
