@@ -143,7 +143,6 @@ header img {
     align-items: center;
     height: 5rem;
 
-
 }
 
 /*botao de contato*/
@@ -157,12 +156,19 @@ header img {
     max-width: 9rem;
 }
 
+.contact-button img:hover{
+    transform: scale(1.1);
+}
+
 /*imagem botao de email*/
 .email-button img {
     display: flex;
     width: 15rem;
 }
 
+.email-button img:hover{
+    transform: scale(1.1);
+}
 .banner {
     display: flex;
     flex-direction: row;
