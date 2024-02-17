@@ -272,6 +272,7 @@ header img {
 
 /*SEGUNDA PÁGINA*/
 
+
 #consultaProcessual {
     height: 12rem;
     display: flex;
@@ -281,6 +282,12 @@ header img {
     align-items: center;
     justify-content: center;
     background: linear-gradient(to right, rgba(209, 176, 107, 1) 2%, rgba(30, 42, 58, 1)70%);
+}
+
+#consultaProcessual .botoesConsulta{
+    display: flex;
+    justify-content: center;
+    max-width: 10rem;
 }
 
 #consultaProcessual h1 {
@@ -295,7 +302,7 @@ header img {
 /*botoes para consulta e-SAJ e Consulta Publica*/
 .botaoConsulta {
 
-    width: 12rem;
+    width: 6rem;
     height: 3rem;
     margin-right: 1rem;
     border-radius: 5px;
@@ -1791,6 +1798,13 @@ footer {
         background: linear-gradient(to right, rgba(209, 176, 107, 1) 2%, rgba(30, 42, 58, 1)70%);
     }
 
+    
+#consultaProcessual .botoesConsulta{
+    display: flex;
+    justify-content: center;
+    max-width: 10rem;
+}
+
     #consultaProcessual h1 {
         color: white;
         font-family: var(--ff1);
@@ -1803,7 +1817,7 @@ footer {
     /*botoes para consulta e-SAJ e Consulta Publica*/
     .botaoConsulta {
 
-        width: 12rem;
+        width: 7rem;
         height: 3rem;
         margin-right: 1rem;
         border-radius: 5px;
