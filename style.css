@@ -1772,9 +1772,8 @@ footer {
 
     #button-whatsapp {
         display: flex;
-        flex-direction: row;
-        margin-top: -rem;
-        margin-left: -2rem;
+        margin: 40rem auto;
+margin-left: 1rem;
         height: 5rem;
         width: 13.5em;
         background-color: #D1B06B;
