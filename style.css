@@ -286,14 +286,31 @@ header img {
 
 #consultaProcessual .botoesConsulta{
     display: flex;
+ flex-direction: column;
     justify-content: center;
+    align-items: center;
     max-width: 10rem;
+    margin: 0 auto;
+    
+}
+
+
+#consultaProcessual .btcons1{
+    display: flex;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+
+}
+#consultaProcessual .btcons2{
+    display: flex;
+    padding-left: 1rem;
+
 }
 
 #consultaProcessual h1 {
     color: white;
     font-family: var(--ff);
-    font-size: 15px;
+    font-size: 17px;
     margin-bottom: 1.2rem;
     text-align: center;
 }
@@ -302,7 +319,7 @@ header img {
 /*botoes para consulta e-SAJ e Consulta Publica*/
 .botaoConsulta {
 
-    width: 6rem;
+    min-width: 12rem;
     height: 3rem;
     margin-right: 1rem;
     border-radius: 5px;
@@ -1086,7 +1103,7 @@ footer {
     /*botoes para consulta e-SAJ e Consulta Publica*/
     .botaoConsulta {
 
-        width: 12rem;
+        width: 14rem;
         height: 3rem;
         margin-right: 1rem;
         border-radius: 5px;
@@ -1094,6 +1111,22 @@ footer {
         background: #1F2732;
         cursor: pointer;
     }
+    
+#consultaProcessual .btcons1{
+    display: flex;
+    margin: 0 auto;
+
+}
+#consultaProcessual .btcons2{
+    display: flex;
+  margin: 0 auto;
+
+}
+
+#consultaProcessual .botoesConsulta{
+    display: flex;
+    flex-direction: row;
+}
 
     .botaoConsulta:hover {
         background: #D1B06B;
@@ -2599,7 +2632,44 @@ footer {
         height: 100%;
         background: rgb(30, 42, 58);
 
+
     }
+
+    
+#consultaProcessual .botoesConsulta{
+    display: flex;
+ flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 10rem;
+    margin: 0 auto;
+    
+}
+
+
+#consultaProcessual .btcons1{
+    display: flex;
+    margin: 0 auto; 
+   
+
+}
+#consultaProcessual .btcons2{
+    display: flex;
+    margin: 0 auto;   
+}
+
+.botaoConsulta {
+
+    min-width: 12rem;
+    height: 3rem;
+    margin-right: 1rem;
+    border-radius: 5px;
+    color: white;
+    background: #1F2732;
+    cursor: pointer;
+}
+
+    
 
 
     .caixa {
