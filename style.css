@@ -225,14 +225,31 @@ header img {
 #button-whatsapp {
     display: flex;
     flex-direction: row;
-    margin-top: -rem;
-    margin-left: -2rem;
+    margin-top: 45rem;
     height: 5rem;
     width: 12em;
     background-color: #D1B06B;
     border-radius: 10%;
     cursor: pointer;
+    position: fixed;
+    z-index: 10000;
+    justify-content: end;
+    margin-left: 18.1rem;
+    animation: piscar 1s infinite;
+ 
 }
+@keyframes piscar {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.7;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
 
 #button-whatsapp img {
     display: flex;
@@ -1046,13 +1063,13 @@ footer {
     /*botao do whatsapp*/
     #button-whatsapp {
         display: flex;
-        margin-top: 3rem;
-        width: 17rem;
+        margin-top: 55rem;
+        width: 20rem;
         height: 4rem;
         background-color: #D1B06B;
-        border-radius: 5px;
+        border-radius: 40px;
         cursor: pointer;
-        margin-left: 2rem;
+        margin-left: 22rem;
     }
 
     #button-whatsapp img {
@@ -2574,22 +2591,16 @@ footer {
     }
 
     /*botao do whatsapp*/
-    #button-whatsapp {
-        display: flex;
-        margin-top: 3rem;
-        width: 18rem;
-        height: 4rem;
-        background-color: #D1B06B;
-        border-radius: 5px;
-        cursor: pointer;
-    }
+    
+
+    
 
 
     #button-whatsapp {
         display: flex;
         flex-direction: row;
-        margin-top: 2rem;
-        margin-left: -2rem;
+        margin-top: 50rem;
+     margin-left: -1rem;
         height: 5rem;
         width: 20em;
         background-color: #D1B06B;
