@@ -1779,12 +1779,12 @@ footer {
     .banner .banner-texto h1 {
 
         margin-left: -2rem;
-        width: 22.59rem;
+        width: 20rem;
         align-items: center;
         font-size: 28.5px;
         color: #ffffff;
         font-family: var(--ff1);
-        text-align: start;
+        text-align:justify ;
     }
 
     .banner .banner-texto h5 {
