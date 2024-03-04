@@ -19,6 +19,6 @@ jobs:
           user: ${{ secrets.USER }}
           password: ${{ secrets.PASS }}
           localDir: "site-alexandre"
-
+          repository: ${{ env.GITHUB_REPOSITORY }}
         
       
